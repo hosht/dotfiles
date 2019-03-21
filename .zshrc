@@ -1,0 +1,266 @@
+# -------------------------------------
+# Environment variables
+# -------------------------------------
+
+# LANG
+export LANG=ja_JP.UTF-8
+case ${UID} in
+0)
+    LANG=C
+    ;;
+esac
+
+# use Japanese in ssh hosts
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+case ${OSTYPE} in
+  darwin*)
+  ;;
+esac
+
+# GUN coreutils
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
+
+# pager
+export PAGER=/usr/local/bin/vimpager
+export MANPAGER=/usr/local/bin/vimpager
+
+# MacVim
+export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# golang
+export GOPATH=$HOME/.go
+
+# aws-cli
+source /usr/local/share/zsh/site-functions/_aws
+
+# -------------------------------------
+# zsh options
+# -------------------------------------
+
+# for zsh-completions$
+if [ -e /usr/local/share/zsh-completions ]; then
+  fpath=(/usr/local/share/zsh-completions $fpath)
+fi
+
+# auto complete
+autoload -U compinit
+compinit
+
+# suggest when mistake
+setopt correct
+
+# compacked complete list display
+setopt list_packed
+
+# nobeep sound
+setopt nobeep
+
+setopt nolistbeep
+
+# no remove postfix slash of command line
+setopt noautoremoveslash
+
+# use color
+setopt prompt_subst
+
+# prevent logout from ^D
+setopt ignoreeof
+
+# notyfy when a background job finished
+setopt no_tify
+
+# not add repeated commands to history
+setopt hist_ignore_dups
+
+# command history
+HISTFILE=~/.zsh_history
+HISTSIZE=50000
+SAVEHIST=50000
+setopt share_history
+
+# completion
+
+# disable tab for files order
+unsetopt auto_menu
+
+# incldue ~/.ssh/config
+hosts=( ${(@)${${(M)${(s:# :)${(zj:# :)${(Lf)"$([[ -f ~/.ssh/config ]] && < ~/.ssh/config)"}%%\#*}}#host(|name) *}#host(|name) }/\*} )
+zstyle ':completion:*:hosts' hosts $hosts
+
+# cd -[tab] jump past directories
+setopt auto_pushd
+
+# cd with just directory name
+setopt auto_cd
+
+# -------------------------------------
+# path
+# -------------------------------------
+
+# remove duplicated
+typeset -U path cdpath fpath manpath
+
+path=(
+    $HOME/bin(N-/)
+    /usr/local/bin(N-/)
+    /usr/local/sbin(N-/)
+    $path
+)
+
+# -------------------------------------
+# prompt
+# -------------------------------------
+
+autoload -U promptinit; promptinit
+autoload -Uz colors; colors
+autoload -Uz vcs_info
+autoload -Uz is-at-least
+
+# begin VCS
+zstyle ":vcs_info:*" enable git svn hg bzr
+zstyle ":vcs_info:*" formats "(%s)-[%b]"
+zstyle ":vcs_info:*" actionformats "(%s)-[%b|%a]"
+zstyle ":vcs_info:(svn|bzr):*" branchformat "%b:r%r"
+zstyle ":vcs_info:bzr:*" use-simple true
+
+zstyle ":vcs_info:*" max-exports 6
+
+if is-at-least 4.3.10; then
+    zstyle ":vcs_info:git:*" check-for-changes true
+    zstyle ":vcs_info:git:*" stagedstr "<S>"
+    zstyle ":vcs_info:git:*" unstagedstr "<U>"
+    zstyle ":vcs_info:git:*" formats "(%b) %c%u"
+    zstyle ":vcs_info:git:*" actionformats "(%s)-[%b|%a] %c%u"
+fi
+
+function vcs_prompt_info() {
+    LANG=en_US.UTF-8 vcs_info
+    [[ -n "$vcs_info_msg_0_" ]] && echo -n " %{$fg[yellow]%}$vcs_info_msg_0_%f"
+}
+# end VCS
+
+case ${UID} in
+0)
+    PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') %B%{${fg[red]}%}%/#%{${reset_color}%}%b "
+    PROMPT2="%B%{${fg[red]}%}%_#%{${reset_color}%}%b "
+    SPROMPT="%B%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%}%b "
+    ;;
+*)
+    PROMPT="%{${fg[red]}%}%/%%%{${reset_color}%} "
+    PROMPT2="%{${fg[red]}%}%_%%%{${reset_color}%} "
+    SPROMPT="%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
+    [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
+        PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') ${PROMPT}"
+    ;;
+esac
+
+# -------------------------------------
+# alias
+# -------------------------------------
+
+# aliased ls needs if file/dir completions work
+setopt complete_aliases
+
+# grep
+alias grep="grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
+
+# ls
+case "${OSTYPE}" in
+freebsd*|darwin*)
+    alias ls="ls -G"
+    ;;
+linux*)
+    alias ls="ls --color"
+    ;;
+esac
+
+alias l="ls -la"
+alias la="ls -la"
+alias l1="ls -1"
+
+# tree
+alias tree="tree -NC"
+
+# git-foresta
+function gitfo() { git-foresta --style=10 "$@" | less -RSX }
+function gitfoa() { git-foresta --all --style=10 "$@" | less -RSX }
+compdef _git gitfo=git-log
+compdef _git gitfoa=git-log
+
+# tmux + screen-256colorでsshしたときにvimやtopが使えない対策
+alias ssh='TERM=xterm ssh'
+
+# -------------------------------------
+# key bind
+# -------------------------------------
+
+bindkey -e
+
+function cdup() {
+   echo
+   cd ..
+   zle reset-prompt
+}
+zle -N cdup
+bindkey '^K' cdup
+
+bindkey "^R" history-incremental-search-backward
+
+# -------------------------------------
+# terminal configuration
+# -------------------------------------
+
+case "${TERM}" in
+screen)
+    TERM=xterm
+    ;;
+esac
+
+case "${TERM}" in
+xterm|xterm-color)
+    export LSCOLORS=exfxcxdxbxegedabagacad
+    export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+    zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
+    ;;
+kterm-color)
+    stty erase '^H'
+    export LSCOLORS=exfxcxdxbxegedabagacad
+    export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+    zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
+    ;;
+kterm)
+    stty erase '^H'
+    ;;
+cons25)
+    unset LANG
+    export LSCOLORS=ExFxCxdxBxegedabagacad
+    export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+    zstyle ':completion:*' list-colors 'di=;34;1' 'ln=;35;1' 'so=;32;1' 'ex=31;1' 'bd=46;34' 'cd=43;34'
+    ;;
+jfbterm-color)
+    export LSCOLORS=gxFxCxdxBxegedabagacad
+    export LS_COLORS='di=01;36:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+    zstyle ':completion:*' list-colors 'di=;36;1' 'ln=;35;1' 'so=;32;1' 'ex=31;1' 'bd=46;34' 'cd=43;34'
+    ;;
+esac
+
+# set terminal title including current directory
+case "${TERM}" in
+xterm|xterm-color|kterm|kterm-color)
+    precmd() {
+        echo -ne "\033]0;${USER}@${HOST%%.*}:${PWD}\007"
+    }
+    ;;
+esac
+
+# load user .zshrc configuration file
+[ -f ${HOME}/.zshrc.mine ] && source ${HOME}/.zshrc.mine
