@@ -1,6 +1,5 @@
 [hub]
 protocol = https
-
 [core]
   excludesfile = ~/.gitignore
   quotepath = false
