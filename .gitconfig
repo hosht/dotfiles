@@ -5,7 +5,7 @@ protocol = https
   excludesfile = ~/.gitignore
 [user]
   name = Takanobu Hoshino
-  email = hosht@users.noreply.github.com
+  email = hosh.tknb@gmail.com
 [color]
   diff = auto
   status = auto
