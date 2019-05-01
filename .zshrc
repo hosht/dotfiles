@@ -37,7 +37,9 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # golang
-export GOPATH=$HOME/.go
+export GOPATH="$HOME/work"
+export GOBIN="$GOPATH/bin"
+export PATH="$GOBIN:$PATH"
 
 # aws-cli
 source /usr/local/share/zsh/site-functions/_aws
