@@ -55,7 +55,6 @@ module.exports = {
     'hyperminimal',
     'hyperterm-summon',
     'hyper-dark-scrollbar',
-    'hyper-statusline',
   ],
 
   localPlugins: [],
