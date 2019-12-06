@@ -1,6 +1,6 @@
 "カラースキーマの設定"
 syntax enable
-colorscheme vim-material
+"colorscheme vim-material"
 set t_Co=256
 
 "背景色の設定"
@@ -96,7 +96,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'rhysd/accelerated-jk'
-NeoBundle 'hzchirs/vim-material.vim'
+"NeoBundle 'hzchirs/vim-material.vim'"
 call neobundle#end()
 
 filetype plugin on
