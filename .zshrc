@@ -23,9 +23,6 @@ esac
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 
-# LibreSSL
-export PATH=/usr/local/opt/libressl/bin:$PATH
-
 # pager
 export PAGER=/usr/local/bin/vimpager
 export MANPAGER=/usr/local/bin/vimpager
