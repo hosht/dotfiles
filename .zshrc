@@ -1,45 +1,4 @@
 # -------------------------------------
-# Environment variables
-# -------------------------------------
-
-# LANG
-export LANG=ja_JP.UTF-8
-case ${UID} in
-0)
-    LANG=C
-    ;;
-esac
-
-# use Japanese in ssh hosts
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-
-case ${OSTYPE} in
-  darwin*)
-  ;;
-esac
-
-# GUN coreutils
-export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
-export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
-
-# pager
-export PAGER=/usr/local/bin/vimpager
-export MANPAGER=/usr/local/bin/vimpager
-
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-# golang
-export GOPATH="$HOME/work"
-export GOBIN="$GOPATH/bin"
-export PATH="$GOBIN:$PATH"
-
-# aws-cli
-source /usr/local/share/zsh/site-functions/_aws
-
-# -------------------------------------
 # zsh options
 # -------------------------------------
 
