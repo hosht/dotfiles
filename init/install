@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo 'Start'
+
 DOTFILES_SOURCE_DIRECTORY=$HOME/works/src/github.com/hosht/dotfiles/
 
 git clone https://github.com/hosht/dotfiles.git $DOTFILES_SOURCE_DIRECTORY
@@ -16,3 +18,5 @@ cd $DOTFILES_SOURCE_DIRECTORY/init/
 ./macos
 ./mas
 ./misc
+
+echo 'Done. Restart computer to apply changes'
