@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Before run mas command you must sign into App Store
+
+brew install mas
+
+# 1Password 7
+# Instapaper
+# Keka
+# Keynote
+# Numbers
+# Pages
+# Vimari
+mas install  \
+  1333542190 \
+  1481302432 \
+  470158793  \
+  409183694  \
+  409203825  \
+  409201541  \
+  1480933944 \

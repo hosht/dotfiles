@@ -6,6 +6,7 @@ git clone https://github.com/hosht/dotfiles.git $DOTFILES_SOURCE_DIRECTORY
 
 cd $DOTFILES_SOURCE_DIRECTORY/init/
 
+# Run brew first
 ./brew
 ./git
 ./ruby
@@ -13,3 +14,4 @@ cd $DOTFILES_SOURCE_DIRECTORY/init/
 ./tmux
 ./zsh
 ./macos
+./mas
