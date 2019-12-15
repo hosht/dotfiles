@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+brew install vim
+
+BASEDIR=$(dirname "$0")
+
+ln -s ${BASEDIR%/*}/.vimrc $HOME/.vimrc
+mkdir $HOME/.vimbackup

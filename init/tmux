@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+brew install \
+  tmux \
+  reattach-to-user-namespace
+
+BASEDIR=$(dirname "$0")
+
+ln -s ${BASEDIR%/*}/.tmux.conf $HOME/.tmux.conf
+
+git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm

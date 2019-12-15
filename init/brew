@@ -1,0 +1,103 @@
+#!/usr/bin/env bash
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Replace GNU/Linux commands with system default
+# ref https://qiita.com/eumesy/items/3bb39fc783c8d4863c5f
+brew install \
+  coreutils \
+  ed \
+  findutils
+  gawk \
+  gnu-sed \
+  gnu-tar \
+  grep
+
+# Install commands and softwares
+brew install \
+  ansible \
+  bat \
+  colordiff \
+  coreos-ct \
+  curl \
+  diffutils \
+  exa \
+  fzf \
+  gzip \
+  httpie \
+  libressl \
+  mysql \
+  nano \
+  noti \
+  openssl \
+  p7zip \
+  packer \
+  peco \
+  pt \
+  pwgen \
+  sqlite \
+  tree \
+  unzip \
+  vimpager \
+  w3m \
+  wget \
+  xsv \
+  xz
+
+# AWS
+brew install \
+  aws-cdk \
+  awscli \
+  amazon-ecs-cli
+
+brew tap weaveworks/tap
+brew install weaveworks/tap/eksctl
+
+# Docker
+brew install \
+  dive \
+  docker-completion \
+  docker-compose-completion
+
+# Kubernetes
+# ref https://medium.com/@mo_keefe/a-kubernetes-development-workflow-for-macos-8c41669a4518
+brew install \
+  kind \
+  kubectx \
+  kubernetes-cli \
+  skaffold \
+  stern
+
+brew cask install osxfuse
+brew install datawire/blackbird/telepresence
+
+# Go
+brew install go
+go get github.com/buildkite/terminal-to-html/cmd/terminal-to-html
+
+# Nodejs
+brew install \
+  node \
+  node@12 \
+  yarn
+
+# PHP
+brew install \
+  php \
+  php-code-sniffer
+
+# Python
+brew install python
+
+# QMK Firmware
+# ref https://docs.qmk.fm/#/getting_started_build_tools?id=macos
+brew tap osx-cross/avr
+brew tap PX4/homebrew-px4
+brew update
+brew install avr-gcc@8
+brew link --force avr-gcc@8
+brew install \
+  dfu-programmer \
+  dfu-util \
+  gcc-arm-none-eabi \
+  avrdude

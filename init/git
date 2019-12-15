@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+brew install \
+  diff-so-fancy \
+  git \
+  git-secrets \
+  hub \
+  tig
+
+curl -L https://github.com/takaaki-kasai/git-foresta/raw/master/git-foresta -o /usr/local/bin/git-foresta
+chmod +x /usr/local/bin/git-foresta
+
+BASEDIR=$(dirname "$0")
+
+ln -s ${BASEDIR%/*}/.gitconfig $HOME/.gitconfig
+ln -s ${BASEDIR%/*}/.gitignore $HOME/.gitignore
+
+git secrets --install ~/.git-templates/git-secrets

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+DOTFILES_SOURCE_DIRECTORY=$HOME/works/src/github.com/hosht/dotfiles/
+
+git clone https://github.com/hosht/dotfiles.git $DOTFILES_SOURCE_DIRECTORY
+
+cd $DOTFILES_SOURCE_DIRECTORY/init/
+
+./brew
+./git
+./ruby
+# ./vim
+./tmux
+./zsh
+./macos

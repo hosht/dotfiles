@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Ask for the administrator password upfront
+sudo -v
+
+brew install \
+  zsh \
+  zsh-completion
+
+BASEDIR=$(dirname "$0")
+
+ln -s ${BASEDIR%/*}/.zshenv $HOME/.zshenv
+ln -s ${BASEDIR%/*}/.zshrc $HOME/.zshrc
+
+echo '/usr/local/bin/zsh' | sudo tee -a /etc/shells > /dev/null
+sudo chsh -s /usr/local/bin/zsh $(id -un)
+chmod 755 /usr/local/share/

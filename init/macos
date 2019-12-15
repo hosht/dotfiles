@@ -1,0 +1,255 @@
+#!/usr/bin/env bash
+
+# Settings not syncing with iCloud
+# ref https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# -------------------------------------
+# Desktop & ScreenSaver
+# -------------------------------------
+
+# Set screensaver idle time to 10 minutes
+defaults -currentHost write com.apple.screensaver idleTime -int 600
+
+# Set Arabesque as a screensaver
+defaults -currentHost write com.apple.screensaver moduleDict -dict-add moduleName -string "Arabesque"
+defaults -currentHost write com.apple.screensaver moduleDict -dict-add path -string "/System/Library/Screen Savers/Arabesque.saver"
+defaults -currentHost write com.apple.screensaver moduleDict -dict-add type -int 0
+
+# Bottom left screen corner → Start screen saver
+defaults write com.apple.dock wvous-bl-corner -int 5
+defaults write com.apple.dock wvous-bl-modifier -int 0
+
+# Top right screen corner → Notification Center
+defaults write com.apple.dock wvous-tr-corner -int 12
+defaults write com.apple.dock wvous-tr-modifier -int 0
+
+# -------------------------------------
+# Dock
+# -------------------------------------
+
+# Enable Dock magnification
+defaults write com.apple.dock magnification -int 1
+
+# Auto hide and show dock
+defaults write com.apple.dock autohide -bool true
+
+# Hide recent files from the dock
+defaults write com.apple.dock show-recents -int 0
+
+# Wipe all (default) app icons from the Dock
+defaults write com.apple.dock persistent-apps -array
+
+# -------------------------------------
+# Language & Region
+# -------------------------------------
+
+# Use Japanese as a secondary language
+# defaults write NSGlobalDomain AppleLanguages -array "en-JP" "ja-JP"
+
+# -------------------------------------
+# Account
+# -------------------------------------
+
+# Set a custom user account image
+sudo rm -rf /Library/User\ Pictures/Custom
+sudo mkdir /Library/User\ Pictures/Custom
+sudo ln -s /Library/User\ Pictures/Animals/Parrot.tif /Library/User\ Pictures/Custom/user_icon.png
+sudo dscl . delete /Users/$(id -un) jpegphoto
+sudo dscl . delete /Users/$(id -un) Picture
+sudo dscl . create /Users/$(id -un) Picture "/Library/User Pictures/Custom/user_icon.png"
+
+# -------------------------------------
+# Security & Privacy
+# -------------------------------------
+
+# Enable firewal
+sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
+
+# -------------------------------------
+# Bluetooth
+# -------------------------------------
+
+# Show Bluetooth in menubar
+defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
+
+# -------------------------------------
+# Sound
+# -------------------------------------
+
+# Play feedback when volume is changed
+defaults write -g com.apple.sound.beep.feedback -integer 1
+
+# Show volume in menu bar
+defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/Volume.menu"
+
+
+# -------------------------------------
+# Keyboard
+# -------------------------------------
+
+# Fast KeyRepeat
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+# Select next source in input menu: Disable
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 61 "<dict><key>enabled</key><false/></dict>"
+
+# Select the previous input source: Cmd + Space
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 \
+  "<dict><key>enabled</key><true/><key>value</key><dict><key>type</key><string>standard</string>
+    <key>parameters</key><array><integer>32</integer><integer>49</integer><integer>1048576</integer></array></dict></dict>"
+
+# Show Spotlight search: Ctrl + Space
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 \
+  "<dict><key>enabled</key><true/><key>value</key><dict><key>type</key><string>standard</string>
+    <key>parameters</key><array><integer>32</integer><integer>49</integer><integer>262144</integer></array></dict></dict>"
+
+# Add Japanese input method
+defaults write com.apple.HIToolbox AppleEnabledInputSources -array \
+        '{"Bundle ID" = "com.apple.inputmethod.Kotoeri";InputSourceKind = "Keyboard Input Method";}'
+
+# Use keyboard navigation to move focus between controls
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
+
+
+# -------------------------------------
+# Trackpad
+# -------------------------------------
+
+# Tap to click
+defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
+
+# Tracking speed (5.0 fastest)
+defaults write -g com.apple.trackpad.scaling -float 4.0
+
+
+# Firm click
+defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 2
+defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 2
+
+
+# Enable Expose gesture (slide down with three fingers)
+defaults write com.apple.dock showAppExposeGestureEnabled -int 1
+
+# Enable three finger drag
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+
+# -------------------------------------
+# Displays
+# -------------------------------------
+
+# Disable auto display brightness
+sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
+
+# -------------------------------------
+# Date & Time
+# -------------------------------------
+
+# Hide day of the week in menubar
+defaults write com.apple.menuextra.clock 'DateFormat' -string 'HH:mm'
+
+# -------------------------------------
+# Sharing
+# -------------------------------------
+
+# Set computer name
+# sudo scutil --set ComputerName "$COMPUTER_NAME"
+# sudo scutil --set HostName "$COMPUTER_NAME"
+# sudo scutil --set LocalHostName "$COMPUTER_NAME"
+# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
+
+# -------------------------------------
+# Finder
+# -------------------------------------
+
+# Show icons for hard drives, servers, and removable media on the desktop
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
+# Show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Remove items from trash after 30 days 
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
+
+# Set Home as the default location for new Finder windows
+defaults write com.apple.finder NewWindowTarget -string "PfLo"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+
+# Hider tags from sidebar
+defaults write com.apple.finder ShowRecentTags -bool false
+
+# Display full POSIX path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# Keep folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+# When performing a search, search the current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Avoid creating .DS_Store files on network or USB volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# Use icon view in all Finder windows by default
+# Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
+defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
+
+# Show item info near icons on the desktop
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
+
+# Show item info to the right of the icons on the desktop
+/usr/libexec/PlistBuddy -c "Set DesktopViewSettings:IconViewSettings:labelOnBottom false" ~/Library/Preferences/com.apple.finder.plist
+
+# Increase the size of font on the desktop
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:textSize 14" ~/Library/Preferences/com.apple.finder.plist
+
+# Enable snap-to-grid for icons on the desktop
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+
+# Increase grid spacing for icons on the desktop
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing 100" ~/Library/Preferences/com.apple.finder.plist
+
+# Increase the size of icons on the desktop
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 84" ~/Library/Preferences/com.apple.finder.plist
+
+
+# -------------------------------------
+# App Store
+# -------------------------------------
+
+# Enable the automatic update check
+defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
+
+# Check for software updates daily, not just once per week
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
+# Download newly available updates in background
+defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
+
+# Install System data files & security updates
+defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
+
+# Automatically download apps purchased on other Macs
+defaults write com.apple.SoftwareUpdate ConfigDataInstall -int 1
+
+# Turn on app auto-update
+defaults write com.apple.commerce AutoUpdate -bool true

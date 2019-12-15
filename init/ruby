@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+RUBY_VERSION=2.6.5
+
+brew install \
+  rbenv \
+  rbenv-binstubs \
+  rbenv-default-gems
+
+echo 'gem: --no-document' > $HOME/.gemrc
+
+mkdir $HOME/.rbenv
+
+cat - << EOS > $HOME/.rbenv/default-gems
+bundler
+rubocop
+pry
+solargraph
+ruby-debug-ide
+debase
+EOS
+
+rbenv install $RUBY_VERSION
