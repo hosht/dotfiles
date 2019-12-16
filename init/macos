@@ -63,7 +63,7 @@ defaults write com.apple.dock persistent-apps -array
 # Set a custom user account image
 sudo rm -rf /Library/User\ Pictures/Custom
 sudo mkdir /Library/User\ Pictures/Custom
-sudo ln -s /Library/User\ Pictures/Animals/Parrot.tif /Library/User\ Pictures/Custom/user_icon.png
+sudo ln -s $( cd "$(dirname "$0")" ; pwd -P )/files/icon.png /Library/User\ Pictures/Custom/user_icon.png
 sudo dscl . delete /Users/$(id -un) jpegphoto
 sudo dscl . delete /Users/$(id -un) Picture
 sudo dscl . create /Users/$(id -un) Picture "/Library/User Pictures/Custom/user_icon.png"
