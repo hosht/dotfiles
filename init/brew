@@ -73,7 +73,6 @@ brew install datawire/blackbird/telepresence
 
 # Go
 brew install go
-go get github.com/buildkite/terminal-to-html/cmd/terminal-to-html
 
 # Nodejs
 brew install \
