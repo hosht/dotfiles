@@ -18,6 +18,9 @@ curl -sSo $HOME/Downloads/KeepingYouAwake.zip -L https://github.com/newmarcel/Ke
 # Notable
 curl -sSo $HOME/Downloads/KeepingYouAwake.zip -L https://github.com/notable/notable/releases/download/v1.8.2/Notable-1.8.2-mac.zip
 
+# Pock
+curl -sSo $HOME/Downloads/pock.zip -L "https://pock.dev/download.php?file=pock_0_7_1.zip"
+
 # Sequel Pro
 curl -sSo $HOME/Downloads/SequelPro.dmg -L https://github.com/sequelpro/sequelpro/releases/download/release-1.1.2/sequel-pro-1.1.2.dmg
 
