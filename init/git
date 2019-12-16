@@ -11,9 +11,7 @@ brew install \
 curl -L https://github.com/takaaki-kasai/git-foresta/raw/master/git-foresta -o /usr/local/bin/git-foresta
 chmod +x /usr/local/bin/git-foresta
 
-BASEDIR=$(dirname "$0")
-
-ln -s ${BASEDIR%/*}/.gitconfig $HOME/.gitconfig
-ln -s ${BASEDIR%/*}/.gitignore $HOME/.gitignore
+ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.gitconfig $HOME/.gitconfig
+ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.gitignore $HOME/.gitignore
 
 git secrets --install ~/.git-templates/git-secrets
