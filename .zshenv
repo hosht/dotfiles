@@ -51,6 +51,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # golang
-export GOPATH="$HOME/work"
+export GOPATH="$HOME/works"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
