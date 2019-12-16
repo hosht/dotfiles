@@ -6,6 +6,9 @@ curl -sSo $HOME/Downloads/Docker.dmg -L https://download.docker.com/mac/stable/D
 # Dropbox
 curl -sSo $HOME/Downloads/DropboxInstaller.dmg -L https://www.dropbox.com/download?os=mac
 
+# iStat Menus 6
+curl -sSo $HOME/Downloads/iStatMenu6.dmg -L https://download.bjango.com/istatmenus/
+
 # iTerm 2
 curl -sSo $HOME/Downloads/iTerm2.dmg -L https://iterm2.com/downloads/stable/iTerm2-3_3_7.zip
 
