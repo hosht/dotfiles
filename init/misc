@@ -4,25 +4,28 @@
 curl -sSo $HOME/Downloads/Docker.dmg -L https://download.docker.com/mac/stable/Docker.dmg
 
 # Dropbox
-curl -sSo $HOME/Downloads/DropboxInstaller.dmg -L https://www.dropbox.com/download?os=mac
+# curl -sSo $HOME/Downloads/DropboxInstaller.dmg -L "https://www.dropbox.com/download?os=mac"
 
 # iStat Menus 6
-curl -sSo $HOME/Downloads/iStatMenu6.dmg -L https://download.bjango.com/istatmenus/
+curl -sSo $HOME/Downloads/iStatMenu6.zip -L https://download.bjango.com/istatmenus/
 
 # iTerm 2
-curl -sSo $HOME/Downloads/iTerm2.dmg -L https://iterm2.com/downloads/stable/iTerm2-3_3_7.zip
+curl -sSo $HOME/Downloads/iTerm2.zip -L https://iterm2.com/downloads/stable/iTerm2-3_3_7.zip
 
 # KeepingYouAwake
 curl -sSo $HOME/Downloads/KeepingYouAwake.zip -L https://github.com/newmarcel/KeepingYouAwake/releases/download/1.5.0/KeepingYouAwake-1.5.0.zip
 
 # Notable
-curl -sSo $HOME/Downloads/KeepingYouAwake.zip -L https://github.com/notable/notable/releases/download/v1.8.2/Notable-1.8.2-mac.zip
+curl -sSo $HOME/Downloads/Notable.dmg -L https://github.com/notable/notable/releases/download/v1.8.2/Notable-1.8.2.dmg
 
 # Pock
 curl -sSo $HOME/Downloads/pock.zip -L "https://pock.dev/download.php?file=pock_0_7_1.zip"
 
 # Sequel Pro
 curl -sSo $HOME/Downloads/SequelPro.dmg -L https://github.com/sequelpro/sequelpro/releases/download/release-1.1.2/sequel-pro-1.1.2.dmg
+
+# Source Han Mono
+curl -sSo $HOME/Downloads/SourceHanMono.ttc -L https://github.com/adobe-fonts/source-han-mono/releases/download/1.002/SourceHanMono.ttc
 
 # VSCode
 curl -sSo $HOME/Downloads/vscode.zip -L https://vscode-update.azurewebsites.net/latest/darwin/stable
