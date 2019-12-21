@@ -7,6 +7,9 @@ brew install \
   zsh \
   zsh-completion
 
+mkdir ~/.zplugin
+git clone https://github.com/zdharma/zplugin.git ~/.zplugin/bin
+
 ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.zshenv $HOME/.zshenv
 ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.zshrc $HOME/.zshrc
 
