@@ -158,9 +158,8 @@ linux*)
     ;;
 esac
 
-alias l="ls -la"
-alias la="ls -la"
-alias l1="ls -1"
+# exa
+alias ll="exa -la"
 
 # tree
 alias tree="tree -NC"
