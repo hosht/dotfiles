@@ -4,6 +4,13 @@
 
 source ~/.zplugin/bin/zplugin.zsh
 
+zplugin light b4b4r07/enhancd
+zplugin light mollifier/anyframe
+zplugin light zdharma/fast-syntax-highlighting
+zplugin load  zdharma/history-search-multi-word
+zplugin light zsh-users/zsh-autosuggestions
+zplugin light zsh-users/zsh-history-substring-search
+
 # -------------------------------------
 # zsh options
 # -------------------------------------
@@ -167,8 +174,6 @@ function cdup() {
 }
 zle -N cdup
 bindkey '^K' cdup
-
-bindkey "^R" history-incremental-search-backward
 
 # -------------------------------------
 # terminal configuration
