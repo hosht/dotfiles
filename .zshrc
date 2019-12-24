@@ -165,15 +165,15 @@ alias ssh='TERM=xterm ssh'
 # key bind
 # -------------------------------------
 
-bindkey -e
+# bindkey -e
 
-function cdup() {
-   echo
-   cd ..
-   zle reset-prompt
-}
-zle -N cdup
-bindkey '^K' cdup
+# function cdup() {
+#    echo
+#    cd ..
+#    zle reset-prompt
+# }
+# zle -N cdup
+# bindkey '^K' cdup
 
 # -------------------------------------
 # terminal configuration
