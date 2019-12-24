@@ -8,7 +8,7 @@ source ~/.zplugin/bin/zplugin.zsh
 # zsh options
 # -------------------------------------
 
-# for zsh-completions$
+# for zsh-completions
 if [ -e /usr/local/share/zsh-completions ]; then
   fpath=(/usr/local/share/zsh-completions $fpath)
 fi
