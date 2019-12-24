@@ -17,6 +17,13 @@ zplugin light zsh-users/zsh-history-substring-search
 
 zstyle ":anyframe:selector:" use fzf-tmux
 
+# Avoid conflicts
+function ghqfzf() {
+    unalias cd
+    anyframe-widget-cd-ghq-repository
+    alias cd=__enhancd::cd
+}
+
 # -------------------------------------
 # zsh options
 # -------------------------------------
@@ -169,6 +176,8 @@ compdef _git gitfoa=git-log
 
 # tmux + screen-256colorでsshしたときにvimやtopが使えない対策
 alias ssh='TERM=xterm ssh'
+
+alias gitbr=anyframe-widget-checkout-git-branch
 
 # -------------------------------------
 # key bind
