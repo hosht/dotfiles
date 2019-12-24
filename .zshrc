@@ -165,7 +165,7 @@ alias ssh='TERM=xterm ssh'
 # key bind
 # -------------------------------------
 
-# bindkey -e
+bindkey -e
 
 # function cdup() {
 #    echo
