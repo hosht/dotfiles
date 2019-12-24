@@ -22,3 +22,4 @@
 - [ ] System Preferences -> Software Update -> Enable Install app updates from App Store
 - [ ] Do Not Disturb
 - [ ] Night Shift
+- [ ] Disable auto correct with Kotoeri
