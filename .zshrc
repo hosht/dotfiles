@@ -12,6 +12,12 @@ zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-history-substring-search
 
 # -------------------------------------
+# anyframe
+# -------------------------------------
+
+zstyle ":anyframe:selector:" use fzf-tmux
+
+# -------------------------------------
 # zsh options
 # -------------------------------------
 
