@@ -14,7 +14,7 @@ if [ -e /usr/local/share/zsh-completions ]; then
 fi
 
 # auto complete
-autoload -U compinit
+autoload -Uz compinit
 compinit
 
 # suggest when mistake
