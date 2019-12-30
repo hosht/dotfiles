@@ -2,6 +2,23 @@
 # Path
 # -------------------------------------
 
+export PATH
+export MANPATH
+
+# -U: keep only the first occurrence of each duplicated value
+# ref. http://zsh.sourceforge.net/Doc/Release/Shell-Builtin-Commands.html#index-typeset
+typeset -U PATH path cdpath fpath MANPATH manpath
+
+# ignore /etc/zprofile, /etc/zshrc, /etc/zlogin, and /etc/zlogout
+# ref. http://zsh.sourceforge.net/Doc/Release/Files.html
+# ref. http://zsh.sourceforge.net/Doc/Release/Options.html#index-GLOBALRCS
+unsetopt GLOBAL_RCS
+# copied from /etc/zprofile
+# system-wide environment settings for zsh(1)
+if [ -x /usr/libexec/path_helper ]; then
+    eval `/usr/libexec/path_helper -s`
+fi
+
 # GNU/Linux commands installed via homebrew
 # ref https://qiita.com/eumesy/items/3bb39fc783c8d4863c5f
 path=(
@@ -48,7 +65,6 @@ export MANPAGER=/usr/local/bin/vimpager
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 # golang
 export GOPATH="$HOME/works"

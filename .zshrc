@@ -1,3 +1,6 @@
+# in ~/.zshenv, executed `unsetopt GLOBAL_RCS` and ignored /etc/zshrc
+[ -r /etc/zshrc ] && . /etc/zshrc
+
 # -------------------------------------
 # zplugin
 # -------------------------------------
@@ -85,13 +88,6 @@ setopt auto_pushd
 
 # cd with just directory name
 setopt auto_cd
-
-# -------------------------------------
-# path
-# -------------------------------------
-
-# remove duplicated
-typeset -U path cdpath fpath manpath
 
 # -------------------------------------
 # prompt
@@ -243,3 +239,8 @@ esac
 
 # load user .zshrc configuration file
 [ -f ${HOME}/.zshrc.mine ] && source ${HOME}/.zshrc.mine
+
+# -------------------------------------
+# rbenv
+# -------------------------------------
+eval "$(rbenv init -)"
