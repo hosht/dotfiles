@@ -70,3 +70,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export GOPATH="$HOME/works"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
+
+# nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
