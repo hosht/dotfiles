@@ -176,6 +176,9 @@ alias ssh='TERM=xterm ssh'
 
 alias gitbr=anyframe-widget-checkout-git-branch
 
+# YouTrack issues
+alias youtrack-selfassigned='youtrack i f -q "for: me State: -終了 sort by: State desc"'
+
 # -------------------------------------
 # key bind
 # -------------------------------------
