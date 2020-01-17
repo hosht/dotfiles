@@ -88,6 +88,9 @@ brew install \
   node@12 \
   yarn
 
+brew install nodenv/nodenv/nodenv-default-packages
+touch $HOME/.nodenv/default-packages
+
 # PHP
 brew install \
   php \
