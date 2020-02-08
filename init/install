@@ -16,6 +16,7 @@ cd $DOTFILES_SOURCE_DIRECTORY/init/
 
 # Run brew first
 ./brew
+./aws
 ./git
 ./ruby
 # ./vim

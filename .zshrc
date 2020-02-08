@@ -54,6 +54,9 @@ fi
 autoload -Uz compinit
 compinit
 
+autoload -Uz bashcompinit
+bashcompinit
+
 # suggest when mistake
 setopt correct
 
@@ -100,6 +103,11 @@ setopt auto_pushd
 
 # cd with just directory name
 setopt auto_cd
+
+# AWS CLI
+if [ -e /usr/local/bin/aws_completer ]; then
+  complete -C '/usr/local/bin/aws_completer' aws
+fi
 
 # -------------------------------------
 # prompt

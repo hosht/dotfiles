@@ -51,15 +51,6 @@ brew install \
   xsv \
   xz
 
-# AWS
-brew install \
-  aws-cdk \
-  awscli \
-  amazon-ecs-cli
-
-brew tap weaveworks/tap
-brew install weaveworks/tap/eksctl
-
 # Docker
 brew install \
   container-diff \
