@@ -73,6 +73,11 @@ brew install datawire/blackbird/telepresence
 # Go
 brew install go
 
+# Mackerel CLI
+brew tap mackerelio/mackerel-agent
+brew install mkr
+brew install itchyny/tap/mkrg
+
 # Nodejs
 brew install \
   node \
