@@ -70,6 +70,8 @@ do
 done
 
 # golang
+export GOENV_DISABLE_GOPATH=1
+export PATH="$GOROOT/bin:$PATH"
 export GOPATH="$HOME/works"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
