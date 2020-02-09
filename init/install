@@ -18,6 +18,8 @@ cd $DOTFILES_SOURCE_DIRECTORY/init/
 ./brew
 ./aws
 ./git
+./go
+./node
 ./ruby
 # ./vim
 ./tmux

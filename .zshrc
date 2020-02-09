@@ -264,11 +264,6 @@ esac
 [ -f ${HOME}/.zshrc.mine ] && source ${HOME}/.zshrc.mine
 
 # -------------------------------------
-# rbenv
+# anyenv
 # -------------------------------------
-eval "$(rbenv init -)"
-
-# -------------------------------------
-# nodenv
-# -------------------------------------
-eval "$(nodenv init -)"
+eval "$(anyenv init -)"

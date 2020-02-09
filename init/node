@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+NODENV_ROOT=$HOME/.anyenv/envs/nodenv
+
+$HOME/.anyenv/bin/anyenv install nodenv
+
+cat - << EOS > $NODENV_ROOT/default-packages
+@aws-amplify/cli
+eslint
+eslint-config-prettier
+eslint-plugin-prettier
+eslint-plugin-node
+eslint-plugin-react
+eslint-plugin-vue
+prettier
+prettier-eslint
+stylelint
+stylelint-config-prettier
+stylelint-prettier
+textlint
+textlint-rule-preset-ja-technical-writing
+yarn
+EOS

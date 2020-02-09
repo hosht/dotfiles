@@ -1,23 +1,14 @@
 #!/usr/bin/env bash
 
-# Ask for the administrator password upfront
-sudo -v
+RBENV_ROOT=$HOME/.anyenv/envs/rbenv
 
-# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
-RUBY_VERSION=2.6.5
-
-brew install \
-  rbenv \
-  rbenv-binstubs \
-  rbenv-default-gems
+$HOME/.anyenv/bin/anyenv install rbenv
+git clone https://github.com/ianheggie/rbenv-binstubs.git $RBENV_ROOT/plugins/rbenv-binstubs
+git clone https://github.com/rbenv/rbenv-default-gems.git $RBENV_ROOT/plugins/rbenv-default-gems
 
 echo 'gem: --no-document' > $HOME/.gemrc
 
-mkdir $HOME/.rbenv
-
-cat - << EOS > $HOME/.rbenv/default-gems
+cat - << EOS > $RBENV_ROOT/default-gems
 bundler
 rubocop
 pry
@@ -25,5 +16,3 @@ solargraph
 ruby-debug-ide
 debase
 EOS
-
-rbenv install $RUBY_VERSION

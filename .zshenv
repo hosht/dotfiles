@@ -63,13 +63,13 @@ export LC_ALL=en_US.UTF-8
 export PAGER=/usr/local/bin/vimpager
 export MANPAGER=/usr/local/bin/vimpager
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.anyenv/bin:$PATH"
+for D in `ls $HOME/.anyenv/envs`
+do
+    export PATH="$HOME/.anyenv/envs/$D/shims:$PATH"
+done
 
 # golang
 export GOPATH="$HOME/works"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
-
-# nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"

@@ -35,6 +35,7 @@ brew install \
   libressl \
   mysql \
   nano \
+  node \
   noti \
   openssl \
   p7zip \
@@ -50,6 +51,13 @@ brew install \
   wget \
   xsv \
   xz
+
+# anyenv
+git clone https://github.com/anyenv/anyenv $HOME/.anyenv
+mkdir -p $HOME/.anyenv/plugins
+git clone https://github.com/znz/anyenv-update.git $HOME/.anyenv/plugins/anyenv-update
+$HOME/.anyenv/bin/anyenv install --force-init
+eval "$($HOME/.anyenv/bin/anyenv init -)"
 
 # Docker
 brew install \
@@ -70,37 +78,10 @@ brew install \
 brew cask install osxfuse
 brew install datawire/blackbird/telepresence
 
-# Go
-brew install go
-
 # Mackerel CLI
 brew tap mackerelio/mackerel-agent
 brew install mkr
 brew install itchyny/tap/mkrg
-
-# Nodejs
-brew install \
-  node \
-  nodenv \
-  yarn
-
-brew install nodenv/nodenv/nodenv-default-packages
-cat - << EOS > $HOME/.nodenv/default-packages
-@aws-amplify/cli
-eslint
-eslint-config-prettier
-eslint-plugin-prettier
-eslint-plugin-node
-eslint-plugin-react
-eslint-plugin-vue
-prittier
-prettier-eslint
-stylelint
-stylelint-config-prettier
-stylelint-prettier
-textlint
-textlint-rule-preset-ja-technical-writing
-EOS
 
 # PHP
 brew install \
