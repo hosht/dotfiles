@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# DBeaver
+curl -sSo $HOME/Downloads/DBeaver.pkg -L https://dbeaver.io/files/dbeaver-ce-latest-installer.pkg
+
 # Docker
 curl -sSo $HOME/Downloads/Docker.dmg -L https://download.docker.com/mac/stable/Docker.dmg
 
@@ -22,7 +25,7 @@ curl -sSo $HOME/Downloads/Notable.dmg -L https://github.com/notable/notable/rele
 curl -sSo $HOME/Downloads/pock.zip -L "https://pock.dev/download.php?file=pock_0_7_1.zip"
 
 # Sequel Pro
-curl -sSo $HOME/Downloads/SequelPro.dmg -L https://github.com/sequelpro/sequelpro/releases/download/release-1.1.2/sequel-pro-1.1.2.dmg
+# curl -sSo $HOME/Downloads/SequelPro.dmg -L https://github.com/sequelpro/sequelpro/releases/download/release-1.1.2/sequel-pro-1.1.2.dmg
 
 # Source Han Mono
 curl -sSo $HOME/Downloads/SourceHanMono.ttc -L https://github.com/adobe-fonts/source-han-mono/releases/download/1.002/SourceHanMono.ttc
