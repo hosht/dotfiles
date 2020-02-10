@@ -82,6 +82,7 @@ brew install datawire/blackbird/telepresence
 brew tap mackerelio/mackerel-agent
 brew install mkr
 brew install itchyny/tap/mkrg
+echo 'export MACKEREL_APIKEY=' > $HOME/.mackerel
 
 # PHP
 brew install \

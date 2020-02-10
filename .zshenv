@@ -75,3 +75,9 @@ export PATH="$GOROOT/bin:$PATH"
 export GOPATH="$HOME/works"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
+
+# Mackerel CLI
+if [ -e /usr/local/bin/mkrg ]; then
+    source $HOME/.mackerel
+    export MKRG_VIEWER=iTerm2
+fi
