@@ -29,10 +29,10 @@ function ghqfzf() {
     alias cd=__enhancd::cd
 }
 
-function youtrack-select-my-issue() {
+function youtrack-my-issue() {
     youtrack i f -r -q "for: me State: -終了 sort by: State desc" \
         | jq -r '(map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @csv' \
-        | xsv select 'id,summary,Priority,State' \
+        | xsv select 'id,summary,State' \
         | xsv table \
         | sed '1d' \
         | anyframe-selector-auto \
