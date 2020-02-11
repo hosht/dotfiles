@@ -8,6 +8,9 @@
 !/.gitignore_global
 !/.hyper.js
 !/.tmux.conf
+!/.tmux
+!/.tmux/conf.d
+!/.tmux/conf.d/**
 !/.vimrc
 !/.zshenv
 !/.zshrc
