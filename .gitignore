@@ -5,13 +5,14 @@
 # Files excluded
 !/.alacritty.yml
 !/.gitconfig
-!/.gitignore
+!/.gitignore_global
 !/.hyper.js
 !/.tmux.conf
 !/.vimrc
 !/.zshenv
 !/.zshrc
 
+!/.gitignore
 !/init/
 !/init/**
 !/init/files/**
