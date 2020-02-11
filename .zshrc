@@ -140,9 +140,6 @@ esac
 # aliased ls needs if file/dir completions work
 setopt complete_aliases
 
-# grep
-alias grep="grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
-
 # ls
 case "${OSTYPE}" in
 freebsd*|darwin*)
