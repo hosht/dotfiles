@@ -1,34 +1,19 @@
-.DS_Store
-.AppleDouble
-.LSOverride
+# Ignore everything
+/*
+/.**
 
-# Icon must end with two \r
-Icon
+# Files excluded
+!/.alacritty.yml
+!/.gitconfig
+!/.gitignore
+!/.hyper.js
+!/.tmux.conf
+!/.vimrc
+!/.zshenv
+!/.zshrc
 
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.vscode
-*.code-workspace
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# for vim
-.netrwhist
-/.vim/*
-
-# for Ansible
-*.retry
-
+!/init/
+!/init/**
+!/init/files/**
+!/LICENSE
+!/README.md
