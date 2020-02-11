@@ -140,16 +140,6 @@ esac
 # aliased ls needs if file/dir completions work
 setopt complete_aliases
 
-# ls
-case "${OSTYPE}" in
-freebsd*|darwin*)
-    alias ls="ls -G"
-    ;;
-linux*)
-    alias ls="ls --color"
-    ;;
-esac
-
 # exa
 alias ll="exa -la"
 
