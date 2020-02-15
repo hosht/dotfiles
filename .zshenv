@@ -73,8 +73,6 @@ done
 export GOENV_DISABLE_GOPATH=1
 export PATH="$GOROOT/bin:$PATH"
 export GOPATH="$HOME/works"
-export GOBIN="$GOPATH/bin"
-export PATH="$GOBIN:$PATH"
 
 # Mackerel CLI
 if [ -e /usr/local/bin/mkrg ]; then
