@@ -106,7 +106,11 @@ setopt auto_cd
 
 # AWS CLI
 if [ -e /usr/local/bin/aws_completer ]; then
-  complete -C '/usr/local/bin/aws_completer' aws
+    complete -C /usr/local/bin/aws_completer aws
+fi
+
+if [ -e /usr/local/bin/terraform ]; then
+    complete -o nospace -C /usr/local/bin/terraform terraform
 fi
 
 # -------------------------------------
