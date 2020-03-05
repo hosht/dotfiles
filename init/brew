@@ -28,6 +28,7 @@ brew install \
   curl \
   diffutils \
   exa \
+  expect \
   fzf \
   gzip \
   httpie \
