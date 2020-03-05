@@ -105,3 +105,6 @@ brew install \
   dfu-util \
   gcc-arm-none-eabi \
   avrdude
+
+# reviewdog
+brew install reviewdog/tap/reviewdog
