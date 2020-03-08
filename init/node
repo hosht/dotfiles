@@ -12,6 +12,7 @@ eslint-plugin-prettier
 eslint-plugin-node
 eslint-plugin-react
 eslint-plugin-vue
+lumigo-cli
 prettier
 prettier-eslint
 stylelint
