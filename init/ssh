@@ -1,0 +1,20 @@
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+mkdir $HOME/.ssh
+mkdir $HOME/.ssh/conf.d
+chmod 700 $HOME/.ssh
+
+cat - << EOS > $HOME/.ssh/config
+Include conf.d/*
+
+Host *
+  ServerAliveInterval 300
+  AddKeysToAgent yes
+  UseKeychain yes
+EOS
+
+chmod 644 $HOME/.ssh/config
