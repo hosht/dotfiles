@@ -174,7 +174,7 @@ alias youtrack-selfassigned='youtrack i f -q "for: me State: -終了 -取り下�
 bindkey -e
 
 # load user .zshrc configuration file
-[ -f ${HOME}/.zshrc.mine ] && source ${HOME}/.zshrc.mine
+[ -f ${HOME}/.zshrc.local ] && source ${HOME}/.zshrc.local
 
 # -------------------------------------
 # anyenv
