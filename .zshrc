@@ -29,18 +29,6 @@ function ghqfzf() {
     alias cd=__enhancd::cd
 }
 
-function youtrack-my-issue() {
-    youtrack i f -r -q "for: me State: -終了 -取り下げ sort by: State desc" \
-        | jq -r '(map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @csv' \
-        | xsv select 'id,summary,State' \
-        | xsv table \
-        | sed '1d' \
-        | anyframe-selector-auto \
-        | awk '{print $1}' \
-        | anyframe-action-execute unbuffer youtrack i s \
-        | less -qr
-}
-
 # -------------------------------------
 # zsh options
 # -------------------------------------
@@ -163,9 +151,6 @@ compdef _git gitfoa=git-log
 alias ssh='TERM=xterm ssh'
 
 alias gitbr=anyframe-widget-checkout-git-branch
-
-# YouTrack issues
-alias youtrack-selfassigned='youtrack i f -q "for: me State: -終了 -取り下げ sort by: State desc"'
 
 # -------------------------------------
 # key bind
