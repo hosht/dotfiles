@@ -14,6 +14,9 @@
 !/.vimrc
 !/.zshenv
 !/.zshrc
+!/.zsh/
+!/.zsh/rc/
+!/.zsh/rc/**
 
 !/.gitignore
 !/init/
