@@ -79,3 +79,6 @@ if [ -e /usr/local/bin/mkrg ]; then
     source $HOME/.mackerel
     export MKRG_VIEWER=iTerm2
 fi
+
+# GPG
+export GPG_TTY=$(tty)

@@ -6,6 +6,7 @@
 [user]
   name = Takanobu Hoshino
   email = hosh.tknb@gmail.com
+  signingkey = 66E1C94D121EDEB3
 [color]
   diff = auto
   status = auto
@@ -35,5 +36,7 @@
 [init]
   templatedir = ~/.git-templates/git-secrets
 [pager]
-	diff = diff-so-fancy | less --tabs=4 -RFX
-	show = diff-so-fancy | less --tabs=4 -RFX
+  diff = diff-so-fancy | less --tabs=4 -RFX
+  show = diff-so-fancy | less --tabs=4 -RFX
+[commit]
+  gpgsign = true
