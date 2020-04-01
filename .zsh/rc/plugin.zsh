@@ -30,3 +30,5 @@ zinit light zdharma/fast-syntax-highlighting
 zinit load  zdharma/history-search-multi-word
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
+
+[ -f ${HOME}/.zsh/rc/pluginconfig/anyframe.zsh ] && source ${HOME}/.zsh/rc/pluginconfig/anyframe.zsh
