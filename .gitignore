@@ -12,6 +12,9 @@
 !/.tmux/conf.d
 !/.tmux/conf.d/**
 !/.vimrc
+!/.vim/
+!/.vim/rc/
+!/.vim/rc/**
 !/.zshenv
 !/.zshrc
 !/.zsh/
