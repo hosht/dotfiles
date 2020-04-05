@@ -21,7 +21,7 @@ cd $DOTFILES_SOURCE_DIRECTORY/init/
 ./go
 ./node
 ./ruby
-# ./vim
+./vim
 ./terraform
 ./tmux
 ./zsh

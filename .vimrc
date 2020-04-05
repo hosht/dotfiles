@@ -1,6 +1,27 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+if has('nvim')
+  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/denite.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+Plug 'rhysd/accelerated-jk'
+Plug 'kaicataldo/material.vim'
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+
+call plug#end()
+
 "カラースキーマの設定"
 syntax enable
-"colorscheme vim-material"
+colorscheme material
 set t_Co=256
 
 "背景色の設定"
@@ -81,24 +102,3 @@ nmap <silent>j <Plug>(accelerated_jk_gj)
 nmap gj j
 nmap <silent>k <Plug>(accelerated_jk_gk)
 nmap gk k
-
-if has('vim_starting')
-  if &compatible
-    set nocompatible
-  endif
-
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'ujihisa/unite-colorscheme'
-NeoBundle 'rhysd/accelerated-jk'
-"NeoBundle 'hzchirs/vim-material.vim'"
-call neobundle#end()
-
-filetype plugin on
-filetype indent on
-NeoBundleCheck
