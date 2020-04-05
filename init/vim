@@ -6,4 +6,4 @@ BASEDIR=$(dirname "$0")
 
 ln -s ${BASEDIR%/*}/.vim $HOME/.vim
 ln -s ${BASEDIR%/*}/.vimrc $HOME/.vimrc
-mkdir $HOME/.vimbackup
+mkdir $HOME/.vim/backup
