@@ -38,7 +38,7 @@ set clipboard=unnamed
 "Vi互換をオフ
 set nocompatible
 "スワップファイル用のディレクトリ
-set directory=~/.vimbackup
+set directory=~/.vim/backup
 "変更中のファイルでも、保存しないで他のファイルを表示
 set hidden
 "インクリメンタルサーチを行う
