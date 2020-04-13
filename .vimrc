@@ -16,6 +16,7 @@ endif
 Plug 'rhysd/accelerated-jk'
 Plug 'kaicataldo/material.vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'ConradIrwin/vim-bracketed-paste'
 
 call plug#end()
 
