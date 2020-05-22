@@ -20,6 +20,7 @@
   merge = merge --no-ff
   br = branch
   up = pull --rebase --autostash
+  sw = switch
 [merge]
   tool = vimdiff
 [credential]
