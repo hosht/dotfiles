@@ -2,11 +2,8 @@
 # Functions
 # -------------------------------------
 
-# Avoid conflicts
 function ghqfzf() {
-    unalias cd
     anyframe-widget-cd-ghq-repository
-    alias cd=__enhancd::cd
 }
 
 # git-foresta
