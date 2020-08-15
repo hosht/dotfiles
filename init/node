@@ -15,6 +15,7 @@ eslint-plugin-vue
 lumigo-cli
 prettier
 prettier-eslint
+serverless
 stylelint
 stylelint-config-prettier
 stylelint-prettier

@@ -24,7 +24,6 @@ brew install \
   ansible \
   bat \
   colordiff \
-  coreos-ct \
   curl \
   diffutils \
   exa \
@@ -36,12 +35,9 @@ brew install \
   libressl \
   mysql \
   nano \
-  node \
   noti \
   openssl \
   p7zip \
-  packer \
-  peco \
   pt \
   pwgen \
   sqlite \
@@ -51,7 +47,8 @@ brew install \
   w3m \
   wget \
   xsv \
-  xz
+  xz \
+  zstd
 
 # anyenv
 git clone https://github.com/anyenv/anyenv $HOME/.anyenv
@@ -84,14 +81,6 @@ brew tap mackerelio/mackerel-agent
 brew install mkr
 brew install itchyny/tap/mkrg
 echo 'export MACKEREL_APIKEY=' > $HOME/.mackerel
-
-# PHP
-brew install \
-  php \
-  php-code-sniffer
-
-# Python
-brew install python
 
 # QMK Firmware
 # ref https://docs.qmk.fm/#/getting_started_build_tools?id=macos
