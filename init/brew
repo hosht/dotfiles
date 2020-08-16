@@ -29,6 +29,7 @@ brew install \
   exa \
   expect \
   fzf \
+  glow \
   gzip \
   httpie \
   jq \
