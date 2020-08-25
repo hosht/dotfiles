@@ -71,8 +71,8 @@ done
 
 # golang
 export GOENV_DISABLE_GOPATH=1
-export PATH="$GOROOT/bin:$PATH"
 export GOPATH="$HOME/works"
+export PATH="$GOPATH/bin:$PATH"
 
 # Mackerel CLI
 if [ -e /usr/local/bin/mkrg ]; then
