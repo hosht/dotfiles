@@ -82,3 +82,6 @@ fi
 
 # GPG
 export GPG_TTY=$(tty)
+
+# Python
+export PATH="$HOME/.local/bin:$PATH"
