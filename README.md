@@ -7,7 +7,7 @@
 
 ## Install
 
-`curl -L https://raw.githubusercontent.com/hosht/dotfiles/master/init/install | bash`
+`curl -L https://raw.githubusercontent.com/hosht/dotfiles/main/init/install | bash`
 
 ## TODO
 
