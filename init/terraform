@@ -1,6 +1,7 @@
 $HOME/.anyenv/bin/anyenv install tfenv
 
 brew install \
-  tflint
-brew tap liamg/tfsec
-brew install liamg/tfsec/tfsec
+  tflint \
+  tfsec \
+  minamijoyo/tfschema/tfschema \
+  minamijoyo/tfupdate/tfupdate
