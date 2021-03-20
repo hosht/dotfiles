@@ -16,3 +16,5 @@ alias ssh='TERM=xterm ssh'
 
 # git branch
 alias gitbr=anyframe-widget-checkout-git-branch
+
+alias cdu='cd-gitroot'

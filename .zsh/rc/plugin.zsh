@@ -23,6 +23,7 @@ zinit light-mode for \
     zinit-zsh/z-a-bin-gem-node
 
 zinit light mollifier/anyframe
+zinit light mollifier/cd-gitroot
 zinit ice wait pick"src/macOS/macOS-zsh-completions.plugin.zsh" as"completion" lucid
 zinit light zchee/zsh-completions
 zinit light zdharma/fast-syntax-highlighting
