@@ -5,14 +5,12 @@ NODENV_ROOT=$HOME/.anyenv/envs/nodenv
 $HOME/.anyenv/bin/anyenv install nodenv
 
 cat - << EOS > $NODENV_ROOT/default-packages
-@aws-amplify/cli
 eslint
 eslint-config-prettier
 eslint-plugin-prettier
 eslint-plugin-node
 eslint-plugin-react
 eslint-plugin-vue
-lumigo-cli
 prettier
 prettier-eslint
 serverless

@@ -7,10 +7,8 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 brew install \
-  aws-cdk
+  awscli
+  awscurl
 
 brew tap weaveworks/tap
 brew install weaveworks/tap/eksctl
-
-curl "https://d1vvhvl2y92vvt.cloudfront.net/AWSCLIV2.pkg" -o "$HOME/Downloads/AWSCLIV2.pkg"
-sudo installer -pkg $HOME/Downloads/AWSCLIV2.pkg -target /

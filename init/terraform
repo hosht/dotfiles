@@ -3,5 +3,4 @@ $HOME/.anyenv/bin/anyenv install tfenv
 brew install \
   tflint \
   tfsec \
-  minamijoyo/tfschema/tfschema \
   minamijoyo/tfupdate/tfupdate
