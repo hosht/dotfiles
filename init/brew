@@ -23,11 +23,15 @@ brew install \
 brew install \
   ansible \
   bat \
+  broot \
   colordiff \
   curl \
   diffutils \
+  duf \
+  dust \
   exa \
   expect \
+  fd \
   fzf \
   glow \
   gzip \
@@ -42,6 +46,7 @@ brew install \
   pt \
   pwgen \
   sqlite \
+  tldr \
   tree \
   unzip \
   vimpager \
