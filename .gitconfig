@@ -5,6 +5,7 @@
   quotepath = false
 [user]
   name = Takanobu Hoshino
+  email = hoshino@hey.com
   signingkey = FB99E51870E6BA225D7C3D8BB9823D8678244335
 [color]
   diff = auto
