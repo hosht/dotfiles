@@ -5,8 +5,7 @@
   quotepath = false
 [user]
   name = Takanobu Hoshino
-  email = hosh.tknb@gmail.com
-  signingkey = 66E1C94D121EDEB3
+  signingkey = FB99E51870E6BA225D7C3D8BB9823D8678244335
 [color]
   diff = auto
   status = auto
