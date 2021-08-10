@@ -46,6 +46,7 @@ brew install \
   pt \
   pwgen \
   sqlite \
+  sshuttle \
   tldr \
   tree \
   unzip \
