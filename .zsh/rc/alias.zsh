@@ -15,6 +15,6 @@ alias tree="tree -NC"
 alias ssh='TERM=xterm ssh'
 
 # git branch
-alias gitbr=anyframe-widget-checkout-git-branch
+alias gbr=anyframe-widget-checkout-git-branch
 
 alias cdu='cd-gitroot'
