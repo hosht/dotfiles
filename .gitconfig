@@ -1,7 +1,6 @@
 [hub]
   protocol = https
 [core]
-  excludesfile = ~/.gitignore
   quotepath = false
 [user]
   name = Takanobu Hoshino
