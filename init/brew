@@ -22,6 +22,7 @@ brew install \
 # Install commands and softwares
 brew install \
   ansible \
+  asdf \
   bat \
   broot \
   colordiff \
