@@ -9,7 +9,6 @@ echo 'gem: --no-document' > $HOME/.gemrc
 
 cat - << EOS > $RBENV_ROOT/default-gems
 rubocop
-pry
 solargraph
 ruby-debug-ide
 debase
