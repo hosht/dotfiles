@@ -8,8 +8,8 @@ git clone https://github.com/rbenv/rbenv-default-gems.git $RBENV_ROOT/plugins/rb
 echo 'gem: --no-document' > $HOME/.gemrc
 
 cat - << EOS > $RBENV_ROOT/default-gems
-rubocop
-solargraph
-ruby-debug-ide
 debase
+rubocop
+ruby-debug-ide
+solargraph
 EOS
