@@ -55,6 +55,6 @@ source "$HOME/.zsh/rc/plugin.zsh"
 [ -f ${HOME}/.zshrc.local ] && source ${HOME}/.zshrc.local
 
 # -------------------------------------
-# anyenv
+# asdf
 # -------------------------------------
-eval "$(anyenv init -)"
+[ -f $HOME/.asdf/asdf.sh ] && . $HOME/.asdf/asdf.sh

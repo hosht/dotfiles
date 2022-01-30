@@ -1,4 +1,6 @@
-$HOME/.anyenv/bin/anyenv install tfenv
+#!/usr/bin/env bash
+
+asdf plugin-add terraform https://github.com/asdf-community/asdf-hashicorp.git
 
 brew install \
   tflint \

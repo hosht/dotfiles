@@ -20,6 +20,7 @@ cd $DOTFILES_SOURCE_DIRECTORY/init/
 ./git
 ./go
 ./node
+./python
 ./ruby
 ./vim
 ./terraform

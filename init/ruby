@@ -1,18 +1,11 @@
 #!/usr/bin/env bash
 
-RBENV_ROOT=$HOME/.anyenv/envs/rbenv
-
-$HOME/.anyenv/bin/anyenv install rbenv
-git clone https://github.com/rbenv/rbenv-default-gems.git $RBENV_ROOT/plugins/rbenv-default-gems
+asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 
 echo 'gem: --no-document' > $HOME/.gemrc
 
-cat - << EOS > $RBENV_ROOT/default-gems
+cat - << EOS > "$HOME/.default-gems"
 brakeman
-debase
 debug
 reek
-rubocop
-ruby-debug-ide
-solargraph
 EOS

@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 
-GOENV_ROOT=$HOME/.anyenv/envs/goenv
-
-$HOME/.anyenv/bin/anyenv install goenv
+brew install go

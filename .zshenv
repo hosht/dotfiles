@@ -63,14 +63,7 @@ export LC_ALL=en_US.UTF-8
 export PAGER=/usr/local/bin/vimpager
 export MANPAGER=/usr/local/bin/vimpager
 
-export PATH="$HOME/.anyenv/bin:$PATH"
-for D in `ls $HOME/.anyenv/envs`
-do
-    export PATH="$HOME/.anyenv/envs/$D/shims:$PATH"
-done
-
 # golang
-export GOENV_DISABLE_GOPATH=1
 export GOPATH="$HOME/works"
 export PATH="$GOPATH/bin:$PATH"
 

@@ -6,7 +6,7 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Replace GNU/Linux commands with system default
 # ref https://qiita.com/eumesy/items/3bb39fc783c8d4863c5f
@@ -22,7 +22,6 @@ brew install \
 # Install commands and softwares
 brew install \
   ansible \
-  asdf \
   bat \
   broot \
   colordiff \
@@ -34,6 +33,7 @@ brew install \
   expect \
   fd \
   fzf \
+  git \
   glow \
   gzip \
   httpie \
@@ -57,13 +57,6 @@ brew install \
   xsv \
   xz \
   zstd
-
-# anyenv
-git clone https://github.com/anyenv/anyenv $HOME/.anyenv
-mkdir -p $HOME/.anyenv/plugins
-git clone https://github.com/znz/anyenv-update.git $HOME/.anyenv/plugins/anyenv-update
-$HOME/.anyenv/bin/anyenv install --force-init
-eval "$($HOME/.anyenv/bin/anyenv init -)"
 
 # Docker
 brew install \

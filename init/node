@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-NODENV_ROOT=$HOME/.anyenv/envs/nodenv
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 
-$HOME/.anyenv/bin/anyenv install nodenv
-
-cat - << EOS > $NODENV_ROOT/default-packages
+cat - << EOS > "$HOME/.default-npm-packages"
 eslint
 eslint-config-prettier
 eslint-plugin-prettier
