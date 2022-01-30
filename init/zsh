@@ -7,9 +7,9 @@ brew install \
   zsh \
   zsh-completion
 
-ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.zshenv $HOME/.zshenv
-ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.zshrc $HOME/.zshrc
+ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.zshenv "$HOME/.zshenv"
+ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.zshrc "$HOME/.zshrc"
 
 echo '/usr/local/bin/zsh' | sudo tee -a /etc/shells > /dev/null
-sudo chsh -s /usr/local/bin/zsh $(id -un)
+sudo chsh -s /usr/local/bin/zsh "$(id -un)"
 chmod 755 /usr/local/share/

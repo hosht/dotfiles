@@ -4,7 +4,7 @@ brew install \
   tmux \
   reattach-to-user-namespace
 
-ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.tmux.conf $HOME/.tmux.conf
-ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.tmux $HOME/.tmux
+ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.tmux.conf "$HOME/.tmux.conf"
+ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.tmux "$HOME/.tmux"
 
-git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"

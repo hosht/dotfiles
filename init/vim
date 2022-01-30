@@ -2,8 +2,6 @@
 
 brew install vim
 
-BASEDIR=$(dirname "$0")
-
-ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.vim $HOME/.vim
-ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.vimrc $HOME/.vimrc
-mkdir $HOME/.vim/backup
+ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.vim "$HOME/.vim"
+ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.vimrc "$HOME/.vimrc"
+mkdir -p "$HOME/.vim/backup"

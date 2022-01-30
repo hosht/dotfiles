@@ -6,13 +6,12 @@ brew install \
   ghq \
   git \
   git-secrets \
-  hub \
   tig
 
 curl -L https://github.com/takaaki-kasai/git-foresta/raw/master/git-foresta -o /usr/local/bin/git-foresta
 chmod +x /usr/local/bin/git-foresta
 
-ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.gitconfig $HOME/.gitconfig
-ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.gitignore_global $HOME/.gitignore
+ln -s "$(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.gitconfig" "$HOME/.gitconfig"
+ln -s "$(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.gitignore_global" "$HOME/.gitignore"
 
-git secrets --install ~/.git-templates/git-secrets
+git secrets --install "$HOME/.git-templates/git-secrets"

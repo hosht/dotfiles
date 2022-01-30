@@ -4,5 +4,4 @@ asdf plugin-add terraform https://github.com/asdf-community/asdf-hashicorp.git
 
 brew install \
   tflint \
-  tfsec \
-  minamijoyo/tfupdate/tfupdate
+  tfsec
