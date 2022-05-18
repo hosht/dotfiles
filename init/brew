@@ -32,6 +32,7 @@ brew install \
   exa \
   expect \
   fd \
+  fx \
   fzf \
   git \
   glow \
