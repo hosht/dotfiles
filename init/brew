@@ -57,6 +57,8 @@ brew install \
   wget \
   xsv \
   xz \
+  yq \
+  zoxide \
   zstd
 
 # Docker

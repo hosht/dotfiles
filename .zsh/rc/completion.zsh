@@ -11,6 +11,7 @@ if [ -e /usr/local/bin/aws_completer ]; then
     complete -C /usr/local/bin/aws_completer aws
 fi
 
+# Terraform
 if [ -e /usr/local/bin/terraform ]; then
     complete -o nospace -C /usr/local/bin/terraform terraform
 fi
@@ -19,4 +20,9 @@ fi
 if [ -e ${HOME}/.asdf/completions ]; then
     fpath=(${HOME}/.asdf/completions $fpath)
     autoload -Uz _asdf
+fi
+
+# zoxide
+if [ -e /usr/local/bin/zoxide ]; then
+    eval "$(zoxide init zsh)"
 fi
