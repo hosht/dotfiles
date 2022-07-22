@@ -52,9 +52,14 @@ source "$HOME/.zsh/rc/plugin.zsh"
 # -------------------------------------
 # .zshrc.local
 # -------------------------------------
-[ -f ${HOME}/.zshrc.local ] && source ${HOME}/.zshrc.local
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
 
 # -------------------------------------
 # asdf
 # -------------------------------------
-[ -f $HOME/.asdf/asdf.sh ] && . $HOME/.asdf/asdf.sh
+[ -f "$HOME/.asdf/asdf.sh" ] && . "$HOME/.asdf/asdf.sh"
+
+# -------------------------------------
+# aqua
+# -------------------------------------
+[ -d "${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin" ] && export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
