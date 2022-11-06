@@ -24,6 +24,8 @@ fi
 path=(
     /usr/local/bin(N-/) # homebrew
     /usr/local/sbin(N-/) # homebrew
+    /opt/homebrew/bin(N-/) # homebrew
+    /opt/homebrew/bin(N-/) # homebrew
     /usr/local/opt/coreutils/libexec/gnubin(N-/) # coreutils
     /usr/local/opt/ed/libexec/gnubin(N-/) # ed
     /usr/local/opt/findutils/libexec/gnubin(N-/) # findutils
@@ -60,8 +62,8 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # pager
-export PAGER=/usr/local/bin/vimpager
-export MANPAGER=/usr/local/bin/vimpager
+export PAGER=/opt/homebrew/bin/vimpager
+export MANPAGER=/opt/homebrew/bin/vimpager
 
 # golang
 export GOPATH="$HOME/works"
