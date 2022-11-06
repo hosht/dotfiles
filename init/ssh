@@ -9,7 +9,7 @@ Include conf.d/*
 
 Host *
   ServerAliveInterval 300
-  AddKeysToAgent yes
+  IgnoreUnknown UseKeychain
   UseKeychain yes
 EOS
 

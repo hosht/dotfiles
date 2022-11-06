@@ -6,6 +6,9 @@ brew install \
   ghq \
   git \
   git-secrets \
+  gunupg2 \
+  libfido2 \
+  pinentry-mac \
   tig
 
 curl -L https://github.com/takaaki-kasai/git-foresta/raw/master/git-foresta -o /usr/local/bin/git-foresta
