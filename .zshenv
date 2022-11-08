@@ -25,7 +25,7 @@ path=(
     /usr/local/bin(N-/) # homebrew
     /usr/local/sbin(N-/) # homebrew
     /opt/homebrew/bin(N-/) # homebrew
-    /opt/homebrew/bin(N-/) # homebrew
+    /opt/homebrew/sbin(N-/) # homebrew
     /usr/local/opt/coreutils/libexec/gnubin(N-/) # coreutils
     /usr/local/opt/ed/libexec/gnubin(N-/) # ed
     /usr/local/opt/findutils/libexec/gnubin(N-/) # findutils
