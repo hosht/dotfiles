@@ -62,8 +62,8 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # pager
-export PAGER=/opt/homebrew/bin/vimpager
-export MANPAGER=/opt/homebrew/bin/vimpager
+export PAGER=/usr/bin/less
+export MANPAGER=/usr/bin/less
 
 # golang
 export GOPATH="$HOME/works"
