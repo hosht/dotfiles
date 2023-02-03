@@ -14,3 +14,11 @@ function gitfoa() { git-foresta --all --style=10 "$@" | less -RSX }
 # $ gitfo _git:12: command not found: __git-log_main
 compdef _git gitfo=git-log
 compdef _git gitfoa=git-log
+
+function ghpr() {
+    gh pr list \
+        | xsv table \
+        | anyframe-selector-auto \
+        | awk '{print $(NF-5)}' \
+        | anyframe-action-execute git switch
+}
