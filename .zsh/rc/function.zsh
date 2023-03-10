@@ -22,3 +22,11 @@ function ghpr() {
         | awk '{print $(NF-5)}' \
         | anyframe-action-execute git switch
 }
+
+function gcactivate() {
+     gcloud config configurations list \
+        | xsv table \
+        | anyframe-selector-auto \
+        | awk '{print $1}' \
+        | anyframe-action-execute gcloud config configurations activate
+}
