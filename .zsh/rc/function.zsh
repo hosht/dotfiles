@@ -25,6 +25,7 @@ function ghpr() {
 
 function gcactivate() {
      gcloud config configurations list \
+        | tail -n +2 \
         | xsv table \
         | anyframe-selector-auto \
         | awk '{print $1}' \
