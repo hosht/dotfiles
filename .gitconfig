@@ -39,3 +39,5 @@
   gpgsign = true
 [credential]
 	helper = /usr/local/share/gcm-core/git-credential-manager
+[remote "origin"]
+	prune = true
