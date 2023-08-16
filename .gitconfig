@@ -20,8 +20,6 @@
   sw = switch
 [merge]
   tool = vimdiff
-[credential]
-  helper = /usr/local/bin/git-credential-manager
 [ghq]
   root = ~/works/src
 [secrets]
@@ -39,3 +37,5 @@
   show = diff-so-fancy | less --tabs=4 -RFX
 [commit]
   gpgsign = true
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
