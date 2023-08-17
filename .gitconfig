@@ -14,9 +14,7 @@
 [alias]
   st = status
   co = checkout
-  merge = merge --no-ff
   br = branch
-  up = pull --rebase --autostash
   sw = switch
 [merge]
   tool = vimdiff
@@ -41,3 +39,13 @@
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [remote "origin"]
 	prune = true
+[pull]
+	rebase = true
+[rebase]
+	autostash = true
+[branch "develop"]
+	mergeoptions = --no-ff
+[branch "master"]
+	mergeoptions = --no-ff
+[branch "main"]
+	mergeoptions = --no-ff
