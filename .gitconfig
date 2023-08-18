@@ -16,6 +16,8 @@
   co = checkout
   br = branch
   sw = switch
+  p  = pull
+  d  = diff
 [merge]
   tool = vimdiff
 [ghq]

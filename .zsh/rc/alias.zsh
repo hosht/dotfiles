@@ -18,3 +18,11 @@ alias ssh='TERM=xterm ssh'
 alias gbr=anyframe-widget-checkout-git-branch
 
 alias cdu='cd-gitroot'
+
+alias gp='git pull'
+
+alias gs='git status'
+
+alias gd='git diff'
+
+alias gaa='git add --all'
