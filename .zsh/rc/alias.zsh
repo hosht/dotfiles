@@ -26,3 +26,5 @@ alias gs='git status'
 alias gd='git diff'
 
 alias gaa='git add --all'
+
+alias gprm='gh pr merge -m -d'
