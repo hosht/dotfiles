@@ -9,11 +9,9 @@ eslint-plugin-react
 eslint-plugin-vue
 prettier
 prettier-eslint
-serverless
 stylelint
 stylelint-config-prettier
 stylelint-prettier
 textlint
 textlint-rule-preset-ja-technical-writing
-yarn
 EOS

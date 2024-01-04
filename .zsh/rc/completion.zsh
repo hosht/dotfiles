@@ -20,3 +20,8 @@ fi
 if [ -e /usr/local/bin/zoxide ]; then
     eval "$(zoxide init zsh)"
 fi
+
+# mise
+if [ -e /opt/homebrew/bin/mise ]; then
+    eval "$(mise completion zsh)"
+fi

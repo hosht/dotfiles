@@ -80,3 +80,6 @@ export GPG_TTY=$(tty)
 
 # Python
 export PATH="$HOME/.local/bin:$PATH"
+
+# mise
+export MISE_NODE_COREPACK=1

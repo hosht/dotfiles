@@ -5,5 +5,4 @@ echo 'gem: --no-document' > $HOME/.gemrc
 cat - << EOS > "$HOME/.default-gems"
 brakeman
 debug
-reek
 EOS

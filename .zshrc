@@ -55,6 +55,11 @@ source "$HOME/.zsh/rc/plugin.zsh"
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
 
 # -------------------------------------
+# mise
+# -------------------------------------
+[ -e "/opt/homebrew/bin/mise" ] && eval "$(mise activate zsh)"
+
+# -------------------------------------
 # aqua
 # -------------------------------------
 [ -d "${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin" ] && export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
