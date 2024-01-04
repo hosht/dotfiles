@@ -30,6 +30,7 @@ zinit light zdharma/fast-syntax-highlighting
 zinit load  zdharma/history-search-multi-word
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
+zinit light azu/ni.zsh
 # zinit ice atload'!_zsh_git_prompt_precmd_hook' lucid
 # zinit load woefe/git-prompt.zsh
 
