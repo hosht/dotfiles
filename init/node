@@ -1,17 +1,6 @@
 #!/usr/bin/env bash
 
 cat - << EOS > "$HOME/.default-npm-packages"
-eslint
-eslint-config-prettier
-eslint-plugin-prettier
-eslint-plugin-node
-eslint-plugin-react
-eslint-plugin-vue
-prettier
-prettier-eslint
-stylelint
-stylelint-config-prettier
-stylelint-prettier
 textlint
 textlint-rule-preset-ja-technical-writing
 EOS

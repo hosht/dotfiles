@@ -5,7 +5,6 @@ brew install \
   gh \
   ghq \
   git \
-  git-secrets \
   gunupg2 \
   libfido2 \
   pinentry-mac \
