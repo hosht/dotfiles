@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
-
 echo 'gem: --no-document' > $HOME/.gemrc
 
 cat - << EOS > "$HOME/.default-gems"
