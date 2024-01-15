@@ -6,7 +6,7 @@
 setopt complete_aliases
 
 # exa
-alias ll="exa -la"
+alias ll="eza -la"
 
 # tree
 alias tree="tree -NC"
