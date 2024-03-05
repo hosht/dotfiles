@@ -21,6 +21,7 @@ brew install \
 
 # Install commands and softwares
 brew install \
+  1password-cli \
   ansible \
   bat \
   broot \

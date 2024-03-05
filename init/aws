@@ -3,3 +3,5 @@
 brew install \
   awscli
   awscurl
+
+go install github.com/mrtc0/aws-sso-go@latest

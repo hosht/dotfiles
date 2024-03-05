@@ -55,6 +55,11 @@ source "$HOME/.zsh/rc/plugin.zsh"
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
 
 # -------------------------------------
+# op
+# -------------------------------------
+[ -f "/opt/homebrew/bin/op" ] && source "$HOME/.config/op/plugins.sh"
+
+# -------------------------------------
 # mise
 # -------------------------------------
 [ -e "/opt/homebrew/bin/mise" ] && eval "$(mise activate zsh)"
