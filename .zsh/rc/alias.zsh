@@ -5,7 +5,7 @@
 # aliased ls needs if file/dir completions work
 setopt complete_aliases
 
-# exa
+# eza
 alias ll="eza -la"
 
 # tree
@@ -28,3 +28,6 @@ alias gd='git diff'
 alias gaa='git add --all'
 
 alias gprm='gh pr merge -m -d'
+
+# gcloud cli
+alias gccurrent='gcloud config configurations list'

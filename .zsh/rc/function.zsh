@@ -23,6 +23,7 @@ function ghpr() {
         | anyframe-action-execute git switch
 }
 
+# gcloud cli
 function gcactivate() {
      gcloud config configurations list \
         | tail -n +2 \
