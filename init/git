@@ -6,6 +6,7 @@ brew install \
   gh \
   ghq \
   git \
+  git-delta \
   gunupg2 \
   libfido2 \
   pinentry-mac \
