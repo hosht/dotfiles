@@ -25,8 +25,14 @@
 [init]
   defaultBranch = main
 [pager]
-  diff = diff-so-fancy | less --tabs=4 -RFX
-  show = diff-so-fancy | less --tabs=4 -RFX
+  difftool = true
+[difftool]
+  prompt = false
+[difftool "difftastic"]
+  cmd = difft $LOCAL $REMOTE
+  prompt = false
+[diff]
+  tool = difftastic
 [commit]
   gpgsign = true
 [credential]
@@ -43,3 +49,5 @@
 	mergeoptions = --no-ff
 [branch "main"]
 	mergeoptions = --no-ff
+[rerere]
+	enabled = true
