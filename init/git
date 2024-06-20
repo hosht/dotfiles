@@ -11,8 +11,5 @@ brew install \
   pinentry-mac \
   tig
 
-curl -L https://github.com/takaaki-kasai/git-foresta/raw/master/git-foresta -o /usr/local/bin/git-foresta
-chmod +x /usr/local/bin/git-foresta
-
 ln -s "$(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.gitconfig" "$HOME/.gitconfig"
 ln -s "$(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.gitignore_global" "$HOME/.gitignore"

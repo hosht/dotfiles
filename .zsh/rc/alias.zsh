@@ -31,3 +31,6 @@ alias gprm='gh pr merge -m -d'
 
 # gcloud cli
 alias gccurrent='gcloud config configurations list'
+
+alias gitfo='git log --oneline --graph --all'
+alias gitfoa='git log --oneline --graph --all'
