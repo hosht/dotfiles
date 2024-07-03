@@ -36,18 +36,18 @@
 [commit]
   gpgsign = true
 [credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager
+  helper = /usr/local/share/gcm-core/git-credential-manager
 [remote "origin"]
-	prune = true
+  prune = true
 [pull]
-	rebase = true
+  rebase = true
 [rebase]
-	autostash = true
+  autostash = true
 [branch "develop"]
-	mergeoptions = --no-ff
+  mergeoptions = --no-ff
 [branch "master"]
-	mergeoptions = --no-ff
+  mergeoptions = --no-ff
 [branch "main"]
-	mergeoptions = --no-ff
+  mergeoptions = --no-ff
 [rerere]
-	enabled = true
+  enabled = true
