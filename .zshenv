@@ -83,3 +83,6 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # mise
 export MISE_NODE_COREPACK=1
+
+# brew
+export HOMEBREW_VERIFY_ATTESTATIONS=1
