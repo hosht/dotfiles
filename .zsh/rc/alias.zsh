@@ -23,7 +23,7 @@ alias gp='git pull'
 
 alias gs='git status'
 
-alias gd='git diff'
+alias gd='git difftool'
 
 alias gaa='git add --all'
 
