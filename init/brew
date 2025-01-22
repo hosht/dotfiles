@@ -49,7 +49,7 @@ brew install \
   pt \
   pwgen \
   sqlite \
-  tldr \
+  tealdeer \
   tree \
   unzip \
   vimpager \
