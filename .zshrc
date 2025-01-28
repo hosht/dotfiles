@@ -60,6 +60,11 @@ source "$HOME/.zsh/rc/plugin.zsh"
 [ -f "/opt/homebrew/bin/op" ] && source "$HOME/.config/op/plugins.sh"
 
 # -------------------------------------
+# atuin
+# -------------------------------------
+[ -f "/opt/homebrew/bin/atuin" ] && eval "$(atuin init zsh)"
+
+# -------------------------------------
 # mise
 # -------------------------------------
 [ -e "/opt/homebrew/bin/mise" ] && eval "$(mise activate zsh)"
