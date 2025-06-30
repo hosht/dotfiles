@@ -24,6 +24,7 @@ brew install \
   1password-cli \
   ansible \
   atuin \
+  aqua \
   bat \
   broot \
   colordiff \
@@ -44,7 +45,6 @@ brew install \
   mise \
   mysql \
   nano \
-  noti \
   openssl \
   p7zip \
   pt \
@@ -56,7 +56,6 @@ brew install \
   vimpager \
   w3m \
   wget \
-  xsv \
   xz \
   yq \
   zoxide \
@@ -64,7 +63,6 @@ brew install \
 
 # Docker
 brew install \
-  container-diff \
   dive \
   docker-completion \
   docker-compose-completion
@@ -77,28 +75,3 @@ brew install \
   kubernetes-cli \
   skaffold \
   stern
-
-brew cask install osxfuse
-brew install datawire/blackbird/telepresence
-
-# Mackerel CLI
-brew tap mackerelio/mackerel-agent
-brew install mkr
-brew install itchyny/tap/mkrg
-echo 'export MACKEREL_APIKEY=' > $HOME/.mackerel
-
-# QMK Firmware
-# ref https://docs.qmk.fm/#/getting_started_build_tools?id=macos
-brew tap osx-cross/avr
-brew tap PX4/homebrew-px4
-brew update
-brew install avr-gcc@8
-brew link --force avr-gcc@8
-brew install \
-  dfu-programmer \
-  dfu-util \
-  gcc-arm-none-eabi \
-  avrdude
-
-# reviewdog
-brew install reviewdog/tap/reviewdog

@@ -3,7 +3,4 @@
 cat - << EOS > "$HOME/.default-npm-packages"
 textlint
 textlint-rule-preset-ja-technical-writing
-@getgrit/cli
-@marp-team/marp-cli
-@biomejs/biome
 EOS
