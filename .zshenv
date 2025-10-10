@@ -86,3 +86,6 @@ export MISE_NODE_COREPACK=1
 
 # brew
 export HOMEBREW_VERIFY_ATTESTATIONS=1
+
+# sfw for ni
+export NI_USE_SOCKET_FIREWALL=1
