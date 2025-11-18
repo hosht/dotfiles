@@ -21,6 +21,7 @@
 !/.zsh/rc/
 !/.zsh/rc/**
 
+!/config
 !/.gitignore
 !/init/
 !/init/**
