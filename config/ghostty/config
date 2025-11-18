@@ -5,7 +5,4 @@ font-feature = -dlig
 maximize = true
 macos-titlebar-style = hidden
 macos-non-native-fullscreen = true
-keybind = global:option+space=toggle_quick_terminal
-quick-terminal-position = center
-quick-terminal-size = 100%,100%
-quick-terminal-animation-duration = 0
+keybind = global:option+space=toggle_visibility
