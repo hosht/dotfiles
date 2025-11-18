@@ -1,6 +1,7 @@
 theme = GitHub Dark Default
+font-family = Source Han Code JP
 font-size = 14
-font-feature = "-dlig"
+font-feature = -dlig
 maximize = true
 macos-titlebar-style = hidden
 macos-non-native-fullscreen = true
