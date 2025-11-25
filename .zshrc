@@ -1,5 +1,11 @@
+# -------------------------------------
+# starship
+# -------------------------------------
+
+[ -f "/opt/homebrew/bin/starship" ] && eval "$(starship init zsh)"
+
 # in ~/.zshenv, executed `unsetopt GLOBAL_RCS` and ignored /etc/zshrc
-[ -r /etc/zshrc ] && . /etc/zshrc
+# [ -r /etc/zshrc ] && . /etc/zshrc
 
 # -------------------------------------
 # Base Configurations
