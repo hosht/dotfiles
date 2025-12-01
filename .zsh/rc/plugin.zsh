@@ -15,24 +15,12 @@ source "$HOME/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-# Load a few important annexes, without Turbo
-# (this is currently required for annexes)
-zinit light-mode for \
-    zdharma-continuum/z-a-patch-dl \
-    zdharma-continuum/z-a-as-monitor \
-    zdharma-continuum/z-a-bin-gem-node
-
+zinit light atuinsh/atuin
+zinit light azu/ni.zsh
 zinit light mollifier/anyframe
 zinit light mollifier/cd-gitroot
-zinit ice wait pick"src/macOS/macOS-zsh-completions.plugin.zsh" as"completion" lucid
-zinit light zchee/zsh-completions
-zinit light zdharma/fast-syntax-highlighting
-zinit load  zdharma/history-search-multi-word
+zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-history-substring-search
-zinit light azu/ni.zsh
-zinit light atuinsh/atuin
-# zinit ice atload'!_zsh_git_prompt_precmd_hook' lucid
-# zinit load woefe/git-prompt.zsh
+zinit light zsh-users/zsh-completions
 
 [ -f ${HOME}/.zsh/rc/pluginconfig/anyframe.zsh ] && source ${HOME}/.zsh/rc/pluginconfig/anyframe.zsh
