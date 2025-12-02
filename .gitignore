@@ -1,1 +1,4 @@
-config/zsh/.zshrc.local
+.config/zsh/.zshrc.local
+.dotter/local.toml
+.dotter/cache.toml
+.dotter/cache

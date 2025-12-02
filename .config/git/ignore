@@ -576,7 +576,6 @@ yarn-debug.log*
 
 *.gem
 *.rbc
-/.config
 /coverage/
 /InstalledFiles
 /pkg/
