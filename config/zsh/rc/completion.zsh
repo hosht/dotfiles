@@ -2,18 +2,13 @@
 # Completions
 # -------------------------------------
 
-# AWS CLI
-if [ -e /usr/local/bin/aws_completer ]; then
-    complete -C /usr/local/bin/aws_completer aws
-fi
-
 # Terraform
-if [ -e /usr/local/bin/terraform ]; then
-    complete -o nospace -C /usr/local/bin/terraform terraform
+if [ -e $XDG_DATA_HOME/mise/installs/terraform/latest/bin/terraform ]; then
+    complete -o nospace -C $XDG_DATA_HOME/mise/installs/terraform/latest/bin/terraform terraform
 fi
 
 # zoxide
-if [ -e /usr/local/bin/zoxide ]; then
+if [ -e /opt/homebrew/bin/zoxide ]; then
     eval "$(zoxide init zsh)"
 fi
 

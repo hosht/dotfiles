@@ -20,12 +20,6 @@ source "$XDG_CONFIG_HOME/zsh/rc/base.zsh"
 source "$XDG_CONFIG_HOME/zsh/rc/option.zsh"
 
 # -------------------------------------
-# Prompt
-# -------------------------------------
-
-source "$XDG_CONFIG_HOME/zsh/rc/prompt.zsh"
-
-# -------------------------------------
 # Aliases
 # -------------------------------------
 
