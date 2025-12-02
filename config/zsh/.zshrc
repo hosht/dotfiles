@@ -11,54 +11,54 @@
 # Base Configurations
 # -------------------------------------
 
-source "$HOME/.zsh/rc/base.zsh"
+source "$XDG_CONFIG_HOME/zsh/rc/base.zsh"
 
 # -------------------------------------
 # Options
 # -------------------------------------
 
-source "$HOME/.zsh/rc/option.zsh"
+source "$XDG_CONFIG_HOME/zsh/rc/option.zsh"
 
 # -------------------------------------
 # Prompt
 # -------------------------------------
 
-source "$HOME/.zsh/rc/prompt.zsh"
+source "$XDG_CONFIG_HOME/zsh/rc/prompt.zsh"
 
 # -------------------------------------
 # Aliases
 # -------------------------------------
 
-source "$HOME/.zsh/rc/alias.zsh"
+source "$XDG_CONFIG_HOME/zsh/rc/alias.zsh"
 
 # -------------------------------------
 # Key binds
 # -------------------------------------
 
-source "$HOME/.zsh/rc/keybind.zsh"
+source "$XDG_CONFIG_HOME/zsh/rc/keybind.zsh"
 
 # -------------------------------------
 # Functions
 # -------------------------------------
 
-source "$HOME/.zsh/rc/function.zsh"
+source "$XDG_CONFIG_HOME/zsh/rc/function.zsh"
 
 # -------------------------------------
 # Completions
 # -------------------------------------
 
-source "$HOME/.zsh/rc/completion.zsh"
+source "$XDG_CONFIG_HOME/zsh/rc/completion.zsh"
 
 # -------------------------------------
 # zplugin
 # -------------------------------------
 
-source "$HOME/.zsh/rc/plugin.zsh"
+source "$XDG_CONFIG_HOME/zsh/rc/plugin.zsh"
 
 # -------------------------------------
 # .zshrc.local
 # -------------------------------------
-[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
+[ -f "$XDG_CONFIG_HOME/zsh/.zshrc.local" ] && source "$XDG_CONFIG_HOME/zsh/.zshrc.local"
 
 # -------------------------------------
 # op

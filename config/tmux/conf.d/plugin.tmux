@@ -2,6 +2,8 @@
 # plugins          #
 # ---------------- #
 
+set-environment -g TMUX_PLUGIN_MANAGER_PATH '~/.local/share/tmux/plugins'
+
 # auto start terminal
 set -g @continuum-boot 'on'
 set -g @continuum-boot-options 'iterm'
@@ -15,4 +17,4 @@ set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run '~/.tmux/plugins/tpm/tpm'
+run '~/.local/share/tmux/plugins/tpm/tpm'

@@ -77,12 +77,6 @@ export MANPAGER=/usr/bin/less
 export GOPATH="$HOME/works"
 export PATH="$GOPATH/bin:$PATH"
 
-# Mackerel CLI
-if [ -e /usr/local/bin/mkrg ]; then
-    source $HOME/.mackerel
-    export MKRG_VIEWER=iTerm2
-fi
-
 # GPG
 export GPG_TTY=$(tty)
 
@@ -97,3 +91,27 @@ export HOMEBREW_VERIFY_ATTESTATIONS=1
 
 # sfw for ni
 export NI_USE_SOCKET_FIREWALL=1
+
+# AWS
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
+export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
+
+# Docker
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+
+# less
+export LESSHISTFILE="$XDG_STATE_HOME"/less/history
+
+# npm
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+
+# psql
+export PSQL_HISTORY="$XDG_DATA_HOME/psql_history"
+
+# Ruby
+export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME"/bundle
+export BUNDLE_USER_CACHE="$XDG_CACHE_HOME"/bundle
+export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
+
+# tealdeer
+export TEALDEER_CONFIG_DIR="$XDG_CONFIG_HOME"/tealdeer/

@@ -1,0 +1,10 @@
+[updates]
+auto_update = true
+download_languages = ["en"]
+tls_backend = "rustls-with-native-roots"
+
+[directories]
+cache_dir = "~/.config/tealdeer/.tealdeer-cache/"
+
+[search]
+languages = ["en"]

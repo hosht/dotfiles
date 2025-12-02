@@ -3,18 +3,15 @@
 # -------------------------------------
 
 # command history
-HISTFILE=~/.zsh_history
+HISTFILE="$XDG_STATE_HOME"/zsh/history
 HISTSIZE=50000
 SAVEHIST=50000
 
-# for zsh-completions
-if [ -e /usr/local/share/zsh-completions ]; then
-  fpath=(/usr/local/share/zsh-completions $fpath)
-fi
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
 
 # auto complete
 autoload -Uz compinit
-compinit
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 
 autoload -Uz bashcompinit
 bashcompinit
