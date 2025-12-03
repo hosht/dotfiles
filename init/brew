@@ -21,10 +21,9 @@ brew install \
 
 # Install commands and softwares
 brew install \
-  1password-cli \
-  ansible \
   atuin \
   aqua \
+  awscli \
   bat \
   broot \
   colordiff \
@@ -37,24 +36,19 @@ brew install \
   fx \
   fzf \
   git \
-  glow \
   gzip \
-  httpie \
   jq \
   libressl \
   mise \
-  mysql \
-  nano \
   openssl \
-  p7zip \
   pt \
   pwgen \
   sqlite \
   tealdeer \
+  tflint \
   tree \
   unzip \
-  vimpager \
-  w3m \
+  vim \
   wget \
   xz \
   yq \
@@ -64,14 +58,7 @@ brew install \
 # Docker
 brew install \
   dive \
+  docker \
+  docker-buildx \
   docker-completion \
   docker-compose-completion
-
-# Kubernetes
-# ref https://medium.com/@mo_keefe/a-kubernetes-development-workflow-for-macos-8c41669a4518
-brew install \
-  kind \
-  kubectx \
-  kubernetes-cli \
-  skaffold \
-  stern

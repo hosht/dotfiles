@@ -2,15 +2,9 @@
 
 brew install \
   difftastic \
-  diff-so-fancy \
-  gh \
   ghq \
   git \
-  git-delta \
   gunupg2 \
   libfido2 \
   pinentry-mac \
   tig
-
-ln -s "$(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.gitconfig" "$HOME/.gitconfig"
-ln -s "$(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.gitignore_global" "$HOME/.gitignore"

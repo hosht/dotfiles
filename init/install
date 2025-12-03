@@ -16,18 +16,12 @@ cd $DOTFILES_SOURCE_DIRECTORY/init/
 
 # Run brew first
 ./brew
-./aws
 ./git
-./go
 ./node
-./python
 ./ruby
-./vim
-./terraform
 ./tmux
 ./zsh
 ./macos
-./mas
 ./misc
 
 echo 'Done. Restart computer to apply changes'

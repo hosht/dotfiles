@@ -1,19 +1,13 @@
 #!/usr/bin/env bash
 
-# iStat Menus 6
-curl -sSo $HOME/Downloads/iStatMenu6.zip -L https://download.bjango.com/istatmenus/
-
-# iTerm 2
-curl -sSo $HOME/Downloads/iTerm2.zip -L https://iterm2.com/downloads/stable/iTerm2-3_3_7.zip
-
-# KeepingYouAwake
-curl -sSo $HOME/Downloads/KeepingYouAwake.zip -L https://github.com/newmarcel/KeepingYouAwake/releases/download/1.5.0/KeepingYouAwake-1.5.0.zip
-
-# Notable
-curl -sSo $HOME/Downloads/Notable.dmg -L https://github.com/notable/notable/releases/download/v1.8.2/Notable-1.8.2.dmg
+# iStat Menus 7
+curl -sSo $HOME/Downloads/iStatMenu7.zip -L https://download.bjango.com/istatmenus7/
 
 # Source Han Mono
 curl -sSo $HOME/Downloads/SourceHanMono.ttc -L https://github.com/adobe-fonts/source-han-mono/releases/download/1.002/SourceHanMono.ttc
+
+# UDEV Gothic NF
+curl -sSo $HOME/Downloads/UDEVGothic_NF.zip -L https://github.com/yuru7/udev-gothic/releases/download/v2.1.0/UDEVGothic_NF_v2.1.0.zip
 
 # VSCode
 curl -sSo $HOME/Downloads/vscode.zip -L https://vscode-update.azurewebsites.net/latest/darwin/stable

@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-brew install vim
-
-ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.vim "$HOME/.vim"
-ln -s $(dirname "$(cd "$(dirname "$0")"; pwd -P)")/.vimrc "$HOME/.vimrc"
-mkdir -p "$HOME/.vim/backup"

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-echo 'gem: --no-document' > $HOME/.gemrc
+mkdir -p $XDG_CONFIG_HOME/gem
+echo 'gem: --no-document' > $XDG_CONFIG_HOME/gem/gemrc
 
 cat - << EOS > "$HOME/.default-gems"
-brakeman
 debug
 EOS
