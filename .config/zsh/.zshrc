@@ -1,11 +1,10 @@
-# -------------------------------------
-# starship
-# -------------------------------------
-
-[ -f "/opt/homebrew/bin/starship" ] && eval "$(starship init zsh)"
-
 # in ~/.zshenv, executed `unsetopt GLOBAL_RCS` and ignored /etc/zshrc
 # [ -r /etc/zshrc ] && . /etc/zshrc
+
+# -------------------------------------
+# mise
+# -------------------------------------
+[ -e "/opt/homebrew/bin/mise" ] && eval "$(mise activate zsh)"
 
 # -------------------------------------
 # Base Configurations
@@ -62,12 +61,17 @@ source "$XDG_CONFIG_HOME/zsh/rc/plugin.zsh"
 # -------------------------------------
 # atuin
 # -------------------------------------
-[ -f "/opt/homebrew/bin/atuin" ] && eval "$(atuin init zsh)"
+[ -f "$XDG_DATA_HOME/mise/shims/atuin" ] && eval "$(atuin init zsh)"
 
 # -------------------------------------
-# mise
+# starship
 # -------------------------------------
-[ -e "/opt/homebrew/bin/mise" ] && eval "$(mise activate zsh)"
+[ -f "$XDG_DATA_HOME/mise/shims/starship" ] && eval "$(starship init zsh)"
+
+# -------------------------------------
+# broot
+# -------------------------------------
+[ -f "$XDG_CONFIG_HOME/broot/launcher/bash/br" ] && source "$XDG_CONFIG_HOME/broot/launcher/bash/br"
 
 # -------------------------------------
 # aqua

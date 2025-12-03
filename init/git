@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
 brew install \
-  difftastic \
-  ghq \
   git \
+  gh \
   gunupg \
   libfido2 \
   pinentry-mac \

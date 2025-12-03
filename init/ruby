@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# https://github.com/rbenv/ruby-build/wiki#suggested-build-environment
+brew install \
+  autoconf \
+  gmp \
+  libyaml \
+  readline
+
 mkdir -p $XDG_CONFIG_HOME/gem
 echo 'gem: --no-document' > $XDG_CONFIG_HOME/gem/gemrc
 

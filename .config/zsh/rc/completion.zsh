@@ -8,7 +8,7 @@ if [ -e $XDG_DATA_HOME/mise/installs/terraform/latest/bin/terraform ]; then
 fi
 
 # zoxide
-if [ -e /opt/homebrew/bin/zoxide ]; then
+if [ -e $XDG_DATA_HOME/mise/shims/zoxide ]; then
     eval "$(zoxide init zsh)"
 fi
 

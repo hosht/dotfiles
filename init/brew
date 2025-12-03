@@ -12,6 +12,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # ref https://qiita.com/eumesy/items/3bb39fc783c8d4863c5f
 brew install \
   coreutils \
+  diffutils \
   ed \
   findutils \
   gawk \
@@ -21,50 +22,17 @@ brew install \
 
 # Install commands and softwares
 brew install \
-  aqua \
-  ast-grep \
-  atuin \
-  awscli \
-  bat \
   broot \
-  colima \
-  curl \
-  diffutils \
   dotter \
-  duckdb \
-  duf \
-  dust \
-  ed \
   eza \
-  fd \
-  fx \
-  fzf \
-  git \
   gzip \
-  helix \
-  hurl \
-  jq \
   mise \
   openssl \
-  pt \
   pwgen \
-  starship \
-  tealdeer \
-  tflint \
+  the_platinum_searcher \
   tree \
-  trivy \
   unzip \
   wget \
-  xan \
-  yq \
-  zoxide
-
-# Docker
-brew install \
-  dive \
-  docker \
-  docker-buildx \
-  docker-completion \
-  docker-compose-completion
+  xan
 
 brew install --cask ghostty

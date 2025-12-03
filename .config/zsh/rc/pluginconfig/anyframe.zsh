@@ -2,4 +2,4 @@
 # anyframe
 # -------------------------------------
 
-zstyle ":anyframe:selector:" use fzf-tmux
+zstyle ":anyframe:selector:" use fzf
