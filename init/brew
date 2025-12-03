@@ -21,39 +21,43 @@ brew install \
 
 # Install commands and softwares
 brew install \
-  atuin \
   aqua \
+  ast-grep \
+  atuin \
   awscli \
   bat \
   broot \
-  colordiff \
+  colima \
   curl \
   diffutils \
+  dotter \
+  duckdb \
   duf \
   dust \
+  ed \
   eza \
   fd \
   fx \
   fzf \
   git \
   gzip \
+  helix \
+  hurl \
   jq \
-  libressl \
   mise \
   openssl \
   pt \
   pwgen \
-  sqlite \
+  starship \
   tealdeer \
   tflint \
   tree \
+  trivy \
   unzip \
-  vim \
   wget \
-  xz \
+  xan \
   yq \
-  zoxide \
-  zstd
+  zoxide
 
 # Docker
 brew install \
@@ -62,3 +66,5 @@ brew install \
   docker-buildx \
   docker-completion \
   docker-compose-completion
+
+brew install --cask ghostty

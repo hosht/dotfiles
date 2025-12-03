@@ -4,7 +4,9 @@ brew install \
   difftastic \
   ghq \
   git \
-  gunupg2 \
+  gunupg \
   libfido2 \
   pinentry-mac \
   tig
+
+brew install --cask git-credential-manager
