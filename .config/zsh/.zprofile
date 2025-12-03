@@ -115,3 +115,6 @@ export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
 
 # tealdeer
 export TEALDEER_CONFIG_DIR="$XDG_CONFIG_HOME"/tealdeer/
+
+# ghr
+export GHR_ROOT="$HOME"/works/src/
