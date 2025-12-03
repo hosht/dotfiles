@@ -29,7 +29,6 @@ brew install \
   mise \
   openssl \
   pwgen \
-  the_platinum_searcher \
   tree \
   unzip \
   wget \
