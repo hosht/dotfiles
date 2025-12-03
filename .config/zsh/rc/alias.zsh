@@ -6,10 +6,7 @@
 setopt complete_aliases
 
 # eza
-alias ll="eza -la"
-
-# tree
-alias tree="tree -NC"
+alias ll="lsd -la"
 
 # tmux + screen-256colorでsshしたときにvimやtopが使えない対策
 alias ssh='TERM=xterm ssh'

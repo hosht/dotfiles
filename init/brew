@@ -18,20 +18,11 @@ brew install \
   gawk \
   gnu-sed \
   gnu-tar \
-  grep
+  grep \
+  openssl
 
-# Install commands and softwares
-brew install \
-  aqua \
-  broot \
-  dotter \
-  eza \
-  gzip \
-  mise \
-  openssl \
-  pwgen \
-  unzip \
-  wget \
-  xan
+# TODO replace mise install script
+# see https://mise.jdx.dev/installing-mise.html#installation-methods
+brew install mise
 
 brew install --cask ghostty
