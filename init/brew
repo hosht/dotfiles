@@ -30,7 +30,6 @@ brew install \
   mise \
   openssl \
   pwgen \
-  tree \
   unzip \
   wget \
   xan

@@ -34,3 +34,7 @@ alias gccurrent='gcloud config configurations list'
 
 alias gitfo='git log --oneline --graph --all'
 alias gitfoa='git log --oneline --graph --all'
+
+# broot
+alias tree='broot -c ":pt"'
+alias btree='broot -c ":pt"'
