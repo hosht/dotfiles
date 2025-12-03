@@ -5,7 +5,7 @@
 # aliased ls needs if file/dir completions work
 setopt complete_aliases
 
-# eza
+# lsd
 alias ll="lsd -la"
 
 # tmux + screen-256colorでsshしたときにvimやtopが使えない対策
@@ -35,3 +35,6 @@ alias gitfoa='git log --oneline --graph --all'
 # broot
 alias tree='broot -c ":pt"'
 alias btree='broot -c ":pt"'
+
+# bat
+alias cat='bat'
