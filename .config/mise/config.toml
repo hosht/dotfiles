@@ -6,10 +6,10 @@ idiomatic_version_file_enable_tools = ["node"]
 [tools]
 go = "1.25.5"
 node = "24.11.1"
-terraform = "1.14.0"
-ruby = "3.4.7"
 python = "3.14.1"
+ruby = "3.4.7"
 rust = "1.91.1"
+terraform = "1.14.0"
 "aqua:abiosoft/colima" = "0.9.1"
 "aqua:ajeetdsouza/zoxide" = "0.9.8"
 "aqua:antonmedv/fx" = "39.2.0"

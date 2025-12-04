@@ -125,3 +125,8 @@ export TEALDEER_CONFIG_DIR="$XDG_CONFIG_HOME"/tealdeer/
 
 # ghr
 export GHR_ROOT="$HOME"/works/src/
+
+# Rust&Cargo
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export PATH="$PATH:$CARGO_HOME/bin"
