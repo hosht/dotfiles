@@ -20,10 +20,6 @@ autoload -Uz _zinit
 
 zinit light atuinsh/atuin
 zinit light azu/ni.zsh
-zinit light mollifier/anyframe
-zinit light mollifier/cd-gitroot
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
-
-[ -f ${XDG_CONFIG_HOME}/zsh/rc/pluginconfig/anyframe.zsh ] && source ${XDG_CONFIG_HOME}/zsh/rc/pluginconfig/anyframe.zsh

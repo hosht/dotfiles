@@ -74,6 +74,11 @@ source "$XDG_CONFIG_HOME/zsh/rc/plugin.zsh"
 [ -f "$XDG_CONFIG_HOME/broot/launcher/bash/br" ] && source "$XDG_CONFIG_HOME/broot/launcher/bash/br"
 
 # -------------------------------------
+# ghr
+# -------------------------------------
+[ -f "$XDG_DATA_HOME/mise/shims/ghr" ] && eval "$(ghr shell bash)"
+
+# -------------------------------------
 # aqua
 # -------------------------------------
 [ -d "${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin" ] && export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"

@@ -7,7 +7,6 @@ brew install \
   gh \
   gunupg \
   libfido2 \
-  pinentry-mac \
-  tig
+  pinentry-mac
 
 brew install --cask git-credential-manager

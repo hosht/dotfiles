@@ -19,7 +19,8 @@
   p  = pull
   d  = diff
 [merge]
-  tool = vimdiff
+  tool = hx
+  confliststyle = zdiff3
 [ghq]
   root = ~/works/src
 [init]

@@ -3,16 +3,13 @@
 # -------------------------------------
 
 # Terraform
-if [ -e $XDG_DATA_HOME/mise/installs/terraform/latest/bin/terraform ]; then
-    complete -o nospace -C $XDG_DATA_HOME/mise/installs/terraform/latest/bin/terraform terraform
-fi
+[ -f $XDG_DATA_HOME/mise/installs/terraform/latest/bin/terraform ] && complete -o nospace -C $XDG_DATA_HOME/mise/installs/terraform/latest/bin/terraform terraform
 
 # zoxide
-if [ -e $XDG_DATA_HOME/mise/shims/zoxide ]; then
-    eval "$(zoxide init zsh)"
-fi
+[ -f $XDG_DATA_HOME/mise/shims/zoxide ] && eval "$(zoxide init zsh)"
 
 # mise
-if [ -e /opt/homebrew/bin/mise ]; then
-    eval "$(mise completion zsh)"
-fi
+[ -f /opt/homebrew/bin/mise ] && eval "$(mise completion zsh)"
+
+#  ghr
+[ -f "$XDG_DATA_HOME/mise/shims/ghr" ] && eval "$(ghr shell bash --completion)"

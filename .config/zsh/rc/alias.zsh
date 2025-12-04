@@ -11,10 +11,7 @@ alias ll="lsd -la"
 # tmux + screen-256colorでsshしたときにvimやtopが使えない対策
 alias ssh='TERM=xterm ssh'
 
-# git branch
-alias gbr=anyframe-widget-checkout-git-branch
-
-alias cdu='cd-gitroot'
+alias cdu='cd "$(git rev-parse --show-toplevel)"'
 
 alias gp='git pull'
 
@@ -38,3 +35,7 @@ alias btree='broot -c ":pt"'
 
 # bat
 alias cat='bat'
+
+# ghr
+alias ghqfzf='ghr cd "$(ghr list | fzf)"'
+alias ghrfzf='ghr cd "$(ghr list | fzf)"'
