@@ -21,6 +21,13 @@ brew install \
   grep \
   openssl
 
+# https://github.com/rbenv/ruby-build/wiki#suggested-build-environment
+brew install \
+  autoconf \
+  gmp \
+  libyaml \
+  readline
+
 # TODO replace mise install script
 # see https://mise.jdx.dev/installing-mise.html#installation-methods
 brew install mise

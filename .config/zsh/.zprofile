@@ -86,6 +86,8 @@ export PATH="$HOME/.local/bin:$PATH"
 # mise
 export MISE_NODE_COREPACK=1
 export MISE_PIN=1
+export MISE_RUBY_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/gem/default-gems"
+export MISE_NODE_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/npm/default-npm-packages"
 
 # brew
 export HOMEBREW_VERIFY_ATTESTATIONS=1
@@ -110,6 +112,10 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export PSQL_HISTORY="$XDG_DATA_HOME/psql_history"
 
 # Ruby
+# export IRBRC="$XDG_CONFIG_HOME/irb/irbrc"
+export GEMRC="$XDG_CONFIG_HOME/gem/gemrc"
+export GEM_HOME="$XDG_DATA_HOME/gem"
+export GEM_SPEC_CACHE="$XDG_CACHE_HOME/gem"
 export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME"/bundle
 export BUNDLE_USER_CACHE="$XDG_CACHE_HOME"/bundle
 export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
