@@ -6,3 +6,4 @@ maximize = true
 macos-titlebar-style = hidden
 macos-non-native-fullscreen = true
 keybind = global:option+space=toggle_visibility
+cursor-style-blink = false
