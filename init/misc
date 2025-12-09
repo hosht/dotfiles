@@ -8,6 +8,3 @@ curl -sSo $HOME/Downloads/SourceHanMono.ttc -L https://github.com/adobe-fonts/so
 
 # UDEV Gothic NF
 curl -sSo $HOME/Downloads/UDEVGothic_NF.zip -L https://github.com/yuru7/udev-gothic/releases/download/v2.1.0/UDEVGothic_NF_v2.1.0.zip
-
-# VSCode
-curl -sSo $HOME/Downloads/vscode.zip -L https://vscode-update.azurewebsites.net/latest/darwin/stable
