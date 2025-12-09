@@ -15,10 +15,6 @@ brew "gmp"
 brew "libyaml"
 brew "readline"
 
-# TODO replace mise install script
-# see https://mise.jdx.dev/installing-mise.html#installation-methods
-brew "mise"
-
 # MEMO gnupgの依存が多いので、work pcではssh署名を検討
 brew "git"
 brew "gh"

@@ -4,7 +4,7 @@
 # -------------------------------------
 # mise
 # -------------------------------------
-[ -e "/opt/homebrew/bin/mise" ] && eval "$(mise activate zsh)"
+[ -f "$HOME/.local/bin/mise" ] && eval "$(mise activate zsh)"
 
 # -------------------------------------
 # Base Configurations
