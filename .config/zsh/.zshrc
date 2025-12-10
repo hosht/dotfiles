@@ -57,6 +57,7 @@ source "$XDG_CONFIG_HOME/zsh/rc/plugin.zsh"
 # op
 # -------------------------------------
 [ -f "/opt/homebrew/bin/op" ] && source "$HOME/.config/op/plugins.sh"
+[ -S "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock" ] && export SSH_AUTH_SOCK="~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
 # -------------------------------------
 # atuin

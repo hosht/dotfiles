@@ -5,6 +5,7 @@ depends = []
 
 [default.files]
 ".config" = "~/.config"
+".ssh" = { target = "~/.ssh", type = "template" }
 
 [default.variables]
 

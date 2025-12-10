@@ -53,3 +53,5 @@
   mergeoptions = --no-ff
 [rerere]
   enabled = true
+[include]
+  path = ~/.config/git/conf.d/work

@@ -1,0 +1,12 @@
+[user]
+  email = takanobu.hoshino@bitkey.jp
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDjsPfPZzH0vAH94JCk8jAGrku9k68NQDJ7rY+j6Cfog
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
