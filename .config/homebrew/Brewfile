@@ -15,7 +15,6 @@ brew "gmp"
 brew "libyaml"
 brew "readline"
 
-# MEMO gnupgの依存が多いので、work pcではssh署名を検討
 brew "git"
 brew "gh"
 brew "gnupg"
