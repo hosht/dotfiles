@@ -8,3 +8,4 @@ macos-non-native-fullscreen = true
 keybind = global:option+space=toggle_visibility
 cursor-style-blink = false
 shell-integration = zsh
+confirm-close-surface = false
