@@ -1,6 +1,6 @@
 theme = GitHub Dark Default
 font-family = SUDEV Gothic 35NF
-font-size = 14
+font-size = {{font-size}}
 font-feature = -dlig
 maximize = true
 macos-titlebar-style = hidden
