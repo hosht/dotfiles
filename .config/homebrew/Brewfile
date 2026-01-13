@@ -15,8 +15,12 @@ brew "gmp"
 brew "libyaml"
 brew "readline"
 
+# git & commit signing
 brew "git"
 brew "gh"
 brew "gnupg"
 brew "libfido2"
 brew "pinentry-mac"
+
+# others
+brew yq
