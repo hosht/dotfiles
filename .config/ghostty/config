@@ -1,11 +1,18 @@
-theme = GitHub Dark Default
+config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+
 font-family = SUDEV Gothic 35NF
 font-size = {{font-size}}
 font-feature = -dlig
+window-theme = ghostty
+window-padding-x = 14
+window-padding-y = 14
+resize-overlay = never
+gtk-toolbar-style = flat
 maximize = true
 macos-titlebar-style = hidden
 macos-non-native-fullscreen = true
 keybind = global:option+space=toggle_visibility
+cursor-style = "block"
 cursor-style-blink = false
 shell-integration = zsh
 confirm-close-surface = false
