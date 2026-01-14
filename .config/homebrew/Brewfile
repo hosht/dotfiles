@@ -23,4 +23,4 @@ brew "libfido2"
 brew "pinentry-mac"
 
 # others
-brew yq
+brew "yq"
