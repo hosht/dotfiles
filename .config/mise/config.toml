@@ -2,6 +2,8 @@
 
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
+lockfile = true
+locked = false
 
 [tools]
 go = "1.25.5"
