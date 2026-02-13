@@ -6,7 +6,7 @@ lockfile = true
 locked = false
 
 [tools]
-go = "1.25.5"
+go = "1.26.0"
 node = "24.11.1"
 python = "3.14.1"
 ruby = "4.0.1"
