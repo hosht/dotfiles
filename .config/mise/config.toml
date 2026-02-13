@@ -4,12 +4,13 @@
 idiomatic_version_file_enable_tools = ["node"]
 lockfile = true
 locked = false
+experimental = true
 
 [tools]
 go = "1.26.0"
 node = "24.13.1"
 python = "3.14.1"
-ruby = "4.0.1"
+ruby = { compile = false, version = "4.0.1" }
 rust = "1.91.1"
 terraform = "1.14.3"
 "aqua:abiosoft/colima" = "0.9.1"
