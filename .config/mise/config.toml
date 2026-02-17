@@ -12,7 +12,7 @@ node = "24.13.1"
 python = "3.14.1"
 ruby = { compile = false, version = "4.0.1" }
 rust = "1.91.1"
-terraform = "1.14.3"
+terraform = "1.14.4"
 "aqua:abiosoft/colima" = "0.9.1"
 "aqua:ajeetdsouza/zoxide" = "0.9.8"
 "aqua:antonmedv/fx" = "39.2.0"
