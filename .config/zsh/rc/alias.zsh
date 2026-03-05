@@ -42,3 +42,6 @@ alias ghrfzf='ghr cd "$(ghr list | fzf)"'
 
 # lazygit
 alias lg='lazygit'
+
+# tmux
+alias t='tmux'
