@@ -39,3 +39,6 @@ alias cat='bat'
 # ghr
 alias ghqfzf='ghr cd "$(ghr list | fzf)"'
 alias ghrfzf='ghr cd "$(ghr list | fzf)"'
+
+# lazygit
+alias lg='lazygit'
