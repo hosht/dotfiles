@@ -23,4 +23,5 @@ brew "libfido2"
 brew "pinentry-mac"
 
 # others
+brew "neovim"
 brew "yq"
