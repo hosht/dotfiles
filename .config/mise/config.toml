@@ -3,14 +3,14 @@
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
 lockfile = true
-locked = false
+locked = true
 
 [tools]
 go = "1.26.0"
-node = "24.13.1"
-python = "3.14.1"
+node = "24.14.0"
+python = "3.14.3"
 ruby = { compile = false, version = "4.0.1" }
-rust = "1.91.1"
+rust = "1.93.1"
 terraform = "1.14.5"
 "aqua:abiosoft/colima" = "0.9.1"
 "aqua:ajeetdsouza/zoxide" = "0.9.8"
