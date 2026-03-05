@@ -4,7 +4,6 @@
 idiomatic_version_file_enable_tools = ["node"]
 lockfile = true
 locked = false
-experimental = true
 
 [tools]
 go = "1.26.0"
