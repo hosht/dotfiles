@@ -373,10 +373,6 @@ backend = "npm:@github/copilot"
 version = "1.2.18"
 backend = "npm:opencode-ai"
 
-[[tools."npm:sfw"]]
-version = "2.0.4"
-backend = "npm:sfw"
-
 [[tools.python]]
 version = "3.14.3"
 backend = "core:python"

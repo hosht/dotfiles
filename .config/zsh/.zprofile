@@ -92,9 +92,6 @@ export MISE_NODE_DEFAULT_PACKAGES_FILE="$XDG_CONFIG_HOME/npm/default-npm-package
 # brew
 export HOMEBREW_VERIFY_ATTESTATIONS=1
 
-# sfw for ni
-export NI_USE_SOCKET_FIREWALL=1
-
 # AWS
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
