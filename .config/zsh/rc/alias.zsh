@@ -45,3 +45,6 @@ alias lg='lazygit'
 
 # tmux
 alias t='tmux'
+
+# VSCodium
+alias code="codium"
