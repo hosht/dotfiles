@@ -1,0 +1,101 @@
+{
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "biome.suggestInstallingGlobally": false,
+  "breadcrumbs.enabled": true,
+  "chat.extensionUnification.enabled": true,
+  "chat.viewSessions.orientation": "stacked",
+  "editor.aiStats.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.experimental.preferTreeSitter.regex": true,
+  "editor.fontFamily": "UDEV Gothic 35NF",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 16,
+  "editor.guides.bracketPairs": true,
+  "editor.inlineSuggest.edits.showCollapsed": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.largeFileOptimizations": false,
+  "editor.lineHeight": 24,
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": false,
+    "other": true,
+    "strings": true
+  },
+  "editor.quickSuggestionsDelay": 0,
+  "editor.renderWhitespace": "all",
+  "editor.stickyScroll.enabled": false,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": false,
+  "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    "*.hcl": "terraform",
+    "**/*test*/**/*.spec": "markdown"
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/node_modules": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "git.blame.statusBarItem.enabled": true,
+  "githubPullRequests.pullBranch": "never",
+  "json.schemaDownload.trustedDomains": {
+    "https://biomejs.dev": true,
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://www.schemastore.org/": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.external.osxExec": "ghostty.app",
+  "terminal.integrated.fontFamily": "UDEV Gothic NF",
+  "terraform.languageServer.enable": true,
+  "window.commandCenter": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#252526",
+    "statusBar.debuggingBackground": "#252526",
+    "statusBar.noFolderBackground": "#252526"
+  },
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "workbench.startupEditor": "newUntitledFile"
+}

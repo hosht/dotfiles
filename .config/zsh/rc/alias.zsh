@@ -47,4 +47,4 @@ alias lg='lazygit'
 alias t='tmux'
 
 # VSCodium
-alias code="codium"
+alias code="codium --user-data-dir \"$XDG_CONFIG_HOME/codium\" --extensions-dir \"$XDG_CONFIG_HOME/codium/extensions\""
