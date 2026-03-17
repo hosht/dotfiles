@@ -84,6 +84,7 @@
     "https://schemastore.azurewebsites.net/": true,
     "https://www.schemastore.org/": true
   },
+  "redhat.telemetry.enabled": false,
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.external.osxExec": "ghostty.app",
   "terminal.integrated.fontFamily": "UDEV Gothic NF",
