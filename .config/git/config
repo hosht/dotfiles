@@ -38,7 +38,7 @@
 [commit]
   gpgsign = true
 [credential]
-  helper = "!gh auth git-credential"
+  helper = /usr/local/share/gcm-core/git-credential-manager
 [remote "origin"]
   prune = true
 [pull]
