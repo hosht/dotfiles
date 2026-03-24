@@ -9,6 +9,7 @@
     "github.github-vscode-theme",
     "github.vscode-github-actions",
     "hashicorp.terraform",
+    "oxc.oxc-vscode",
     "redhat.vscode-yaml",
     "tamasfe.even-better-toml",
     "vitest.explorer"
