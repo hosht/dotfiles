@@ -8,6 +8,9 @@ locked = true
 [settings.npm]
 package_manager = "pnpm"
 
+[settings.github]
+use_git_credentials = true
+
 [tools]
 go = "1.26.0"
 node = "24.14.0"
