@@ -22,7 +22,7 @@ arch: host
 #
 # NOTE: value cannot be changed after virtual machine is created.
 # Default: docker
-runtime: containerd
+runtime: docker
 
 # AI model runner (docker, ramalama).
 # Both require krunkit VM type for GPU access.
