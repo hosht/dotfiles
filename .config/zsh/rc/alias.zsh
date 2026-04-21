@@ -48,6 +48,3 @@ alias t='tmux'
 
 # VSCodium
 alias code="codium --user-data-dir \"$XDG_CONFIG_HOME/codium\" --extensions-dir \"$XDG_CONFIG_HOME/codium/extensions\""
-
-# colima/nerdctl
-alias docker='colima nerdctl'
