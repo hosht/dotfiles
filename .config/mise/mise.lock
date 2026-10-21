@@ -128,6 +128,16 @@ url = "https://github.com/Wilfred/difftastic/releases/download/0.67.0/difft-x86_
 version = "0.15.1"
 backend = "aqua:YS-L/csvlens"
 
+[tools."aqua:YS-L/csvlens"."platforms.linux-arm64"]
+checksum = "sha256:7671466036ebc22b1b9b958890a638fd21a06452137fb9ca1321448e5afea7ad"
+url = "https://github.com/YS-L/csvlens/releases/download/v0.15.1/csvlens-aarch64-unknown-linux-gnu.tar.xz"
+url_api = "https://api.github.com/repos/YS-L/csvlens/releases/assets/337979717"
+
+[tools."aqua:YS-L/csvlens"."platforms.linux-arm64-musl"]
+checksum = "sha256:7671466036ebc22b1b9b958890a638fd21a06452137fb9ca1321448e5afea7ad"
+url = "https://github.com/YS-L/csvlens/releases/download/v0.15.1/csvlens-aarch64-unknown-linux-gnu.tar.xz"
+url_api = "https://api.github.com/repos/YS-L/csvlens/releases/assets/337979717"
+
 [tools."aqua:YS-L/csvlens"."platforms.linux-x64"]
 checksum = "sha256:ab086b420e453618fd1544eb4e09cc98279e8570b739725592feb241cd1bef4b"
 url = "https://github.com/YS-L/csvlens/releases/download/v0.15.1/csvlens-x86_64-unknown-linux-musl.tar.xz"
@@ -946,6 +956,7 @@ url_api = "https://api.github.com/repos/siketyan/ghr/releases/assets/235741476"
 
 [tools."aqua:siketyan/ghr"."platforms.linux-arm64-musl"]
 url = "https://github.com/siketyan/ghr/releases/download/v0.4.5/ghr-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/siketyan/ghr/releases/assets/235741476"
 
 [tools."aqua:siketyan/ghr"."platforms.linux-x64"]
 url = "https://github.com/siketyan/ghr/releases/download/v0.4.5/ghr-x86_64-unknown-linux-gnu.tar.gz"
@@ -953,6 +964,7 @@ url_api = "https://api.github.com/repos/siketyan/ghr/releases/assets/235741426"
 
 [tools."aqua:siketyan/ghr"."platforms.linux-x64-musl"]
 url = "https://github.com/siketyan/ghr/releases/download/v0.4.5/ghr-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/siketyan/ghr/releases/assets/235741426"
 
 [tools."aqua:siketyan/ghr"."platforms.macos-arm64"]
 url = "https://github.com/siketyan/ghr/releases/download/v0.4.5/ghr-aarch64-apple-darwin.tar.gz"
@@ -1387,5 +1399,5 @@ version = "1.93.1"
 backend = "core:rust"
 
 [[tools.terraform]]
-version = "1.16.4"
+version = "1.16.5"
 backend = "asdf:terraform"
