@@ -1582,5 +1582,5 @@ version = "1.99.1"
 backend = "core:rust"
 
 [[tools.terraform]]
-version = "1.16.6"
+version = "1.17.1"
 backend = "asdf:terraform"
